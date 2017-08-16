@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  src:
+    local("Roboto-regular"),
+    url("font/roboto.woff") format("woff");
+}
+
+html,
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    text-align: left;
+}
+
+a:link {
+  color: #ffffff;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(255,255,255,0.2);
+}
+
+a:hover,
+a:active {
+  color: #ffbc9e;
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(255,188,158,0.2);
+}
+
+h1 {
+  font-family: "Roboto-bold", "Arial", sans-serif;
+  font-size: 60px;
+  line-height:60px;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: "Roboto-bold", "Arial", sans-serif;
+  font-size: 35px;
+  line-height:41px;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+h4 {
+  font-size: 1.25;
+  font-weight: bold;
+  color: #323232;
+  text-align: left;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.429;
+  text-align: left;
+  color: #323232;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.375;
+  text-align: left;
+  color:#323232
+}
+
+
+.text-dropdown{
+  font-size: 13px;
+  color: #323232;
+  line-height: 1.143;
+}
+
+.text-dropdown-ref {
+  font-size: 13px;
+  color: #999999;
+  line-height: 1.143;
+}
+
+.main-menu {
+  font-size: 16px;
+}
+
+.header-button {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.time {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.143;
+  text-align: right;
+}
+
+.phone {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.091;
+  text-align: right;
+}
+
+.cost {
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.item-weight {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #323232;
+  line-height: 1.333;
+  text-align: left;
+}
+
+.catalog-title {
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.171;
+}
+
+.filters {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.143;
+}
+
+.paginator:link {
+  color: #ffffff;
+}
+.paginator:active {
+  color: #323232;
+  width: 25px;
+  height: 25px;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.paginator:hover {
+  color: #ffffff;
+  width: 25px;
+  height: 25px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
