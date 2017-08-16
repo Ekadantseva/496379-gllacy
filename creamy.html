@@ -11,24 +11,76 @@
         <img src="img/test.jpg" width="154" height="64" alt="Gllacy Shop">
       </span>
       <nav class="main-menu">
-           <div>Каталог</div>
-           <a href="delivery.html">Доставка и оплата</a>
-           <a href="about.html">О компании</a>
-         </ul>
+           <button class="button" class="header-button" name="catalog">Каталог</button>
+           <a href="#">Доставка и оплата</a>
+           <a href="#">О компании</a>
+           <div class="dropdown-catalog">
+             <ul class="text-small">
+               <li><b>Новинки</b></li>
+               <li>Сливочное</li>
+               <li>Щербеты</li>
+               <li>Фруктовый лед</li>
+               <li>Мелорин</li>
+             </ul>
+           </div>
       </nav>
-      <div class="search" >Поиск</div>
-      <div class="login" >Вход</div>
-      <div class="basket" >Пусто</div>
-      <div class="header-contacts"><p class="time">С 10 до 20, ежедневно</p><p>8 812 450-25-25</p></div>
-      </header>
+      <button class="button" class="header-button" name="search">Поиск</button>
+      <button class="button" class="header-button" name="login">Вход</button>
+      <button class="button" class="header-button" name="basket">Пусто</button>
+      <!--Выпадающие формы-->
+            <form class="dropdown-search">
+            <fieldset class=search-group>
+              <input class="textfield"  type="text" name="search-query" placeholder="Что ищем?">
+            </fieldset>
+            </form>
+
+            <form class="dropdown-login">
+              <fieldset class=login-group>
+                <input class="textfield"  type="email" name="login-email" placeholder="Электронная почта">
+                <input class="textfield"  type="password" name="login-password" placeholder="Пароль">
+                <button class="button" type="submit" name="Enter">Войти</button>
+                <div class="login-links">
+                  <a class="text-dropdown" href="#">Забыли пароль?</a>
+                  <a class="text-dropdown" href="#">Новая регистрация</a>
+                </div>
+              </fieldset>
+            </form>
+
+            <form class="dropdown-basket">
+              <fieldset class=basket-group>
+                <div class="basket-row">
+                  <img src="img/test.jpg" width="12" height="12" alt="Удалить">
+                  <img src="img/test.jpg" width="33" height="33">
+                  <p class="text-dropdown">Пломбир с апельсиновым джемом</p>
+                  <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">200 руб.</span>
+                  <span class="text-dropdown">300 руб.</span>
+                </div>
+                <div class="basket-row">
+                  <img src="img/test.jpg" width="12" height="12" alt="Удалить">
+                  <img src="img/test.jpg" width="33" height="33">
+                  <p class="text-dropdown">Клубничный пломбир с присыпкой из белого шоколада</p>
+                  <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">300 руб.</span>
+                  <span class="text-dropdown">450 руб.</span>
+                </div>
+                <span class="text-dropdown"><b>Итого:750 руб.</b></span>
+                <button class="button" type="submit" name="Order">Оформить заказ</button>
+              </fieldset>
+            </form>
+
+      <!--Контакты-->
+            <div class="header-contacts">
+              <p class="time">С 10 до 20, ежедневно</p>
+              <p class="phone">8 812 450-25-25</p>
+            </div>
+            </header>
 
 
 
 <!--filters-->
     <main>
       <nav class="breadcrumbs">
-        <a href="index.html" >Главная</a>»
-        <a href="catalog.html">Каталог</a>»
+        <a href="index.html">Главная</a>»
+        <a href="#">Каталог</a>»
         <span>Сливочное</span>
       </nav>
       <h1 class="title">Сливочное мороженое</h1>
@@ -48,7 +100,7 @@
         </fieldset>
         <fieldset class="radio">
           <legend>Жирность</legend>
-          <input type="radio" name="fat" value="0" >0%
+          <input type="radio" name="fat" value="0">0%
           <input type="radio" name="fat" value="to-10" checked>до 10%
           <input type="radio" name="fat" value="to-30">до 30%
           <input type="radio" name="fat" value="above-30">выше 30%
@@ -61,153 +113,153 @@
           <input type="checkbox" name="adds" value="syrup">сиропы
           <input type="checkbox" name="adds" value="jam">джемы
         </fieldset>
-        <button type="button" name="Apply" class="botton-line">Применить</button>
+        <button type="submit" name="Apply" class="botton-line">Применить</button>
       </form>
 
 
 <!--catalog-->
       <section class="catalog">
         <article class="catalog-item">
-          <a href="item.html">
+          <a href="#">
             <img src="img/test.jpg"  width="267" height="267">
           </a>
           <span class="cost">310</span>
-          <img src="img/test.jpg" width="26" height="31" alt="рублей">
-          <span class="kg">/кг</span>
-          <h3 class="text-white">
-            <a href="item.html" >Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <span class="Rubles">&#8381</span>
+          <span class="item-weight">/кг</span>
+          <h3 class="title-white">
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </h3>
         </article>
 
         <article class="catalog-item">
-          <a href="item.html">
+          <a href="#">
             <img src="img/test.jpg"  width="267" height="267">
           </a>
           <span class="cost">380</span>
-          <img src="img/test.jpg" width="26" height="31" alt="рублей">
-          <span class="kg">/кг</span>
-          <h3 class="text-white">
-            <a href="item.html" >Сливочно-кофейное с кусочками шоколада</a>
+          <span class="Rubles">&#8381</span>
+          <span class="item-weight">/кг</span>
+          <h3 class="title-white">
+            <a href="#">Сливочно-кофейное с кусочками шоколада</a>
           </h3>
         </article>
 
         <article class="catalog-item">
-          <a href="item.html">
+          <a href="#">
             <img src="img/test.jpg"  width="267" height="267">
           </a>
           <span class="cost">355</span>
-          <img src="img/test.jpg" width="26" height="31" alt="рублей">
-          <span class="kg">/кг</span>
-          <h3 class="text-white">
-            <a href="item.html" >Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <span class="Rubles">&#8381</span>
+          <span class="item-weight">/кг</span>
+          <h3 class="title-white">
+            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </h3>
         </article>
 
         <article class="catalog-item">
-          <a href="item.html">
+          <a href="#">
             <img src="img/test.jpg" width="267" height="267">
           </a>
           <span class="cost">415</span>
-          <img src="img/test.jpg" width="26" height="31" alt="рублей">
-          <span class="kg">/кг</span>
-          <h3 class="text-white">
-            <a href="item.html" >Сливочное крем-брюле с карамельной подливкой</a>
+          <span class="Rubles">&#8381</span>
+          <span class="item-weight">/кг</span>
+          <h3 class="title-white">
+            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </h3>
         </article>
 
         <article class="catalog-item">
-          <a href="item.html">
+          <a href="#">
             <img src="img/test.jpg"  width="267" height="267">
           </a>
           <span class="cost">325</span>
-          <img src="img/test.jpg" width="26" height="31" alt="рублей">
-          <span class="kg">/кг</span>
-          <h3 class="text-white">
-            <a href="item.html" >Сливочное с брусничным джемом</a>
+          <span class="Rubles">&#8381</span>
+          <span class="item-weight">/кг</span>
+          <h3 class="title-white">
+            <a href="#">Сливочное с брусничным джемом</a>
           </h3>
         </article>
 
         <article class="catalog-item">
-          <a href="item.html">
+          <a href="#">
             <img src="img/test.jpg"  width="267" height="267">
           </a>
           <span class="cost">410</span>
-          <img src="img/test.jpg" width="26" height="31" alt="рублей">
-          <span class="kg">/кг</span>
-          <h3 class="text-white">
-            <a href="item.html" >Сливочно-черничное с цельными ягодами черники</a>
+          <span class="Rubles">&#8381</span>
+          <span class="item-weight">/кг</span>
+          <h3 class="title-white">
+            <a href="#">Сливочно-черничное с цельными ягодами черники</a>
           </h3>
         </article>
 
         <article class="catalog-item">
-          <a href="item.html">
+          <a href="#">
             <img src="img/test.jpg"  width="267" height="267">
           </a>
           <span class="cost">375</span>
-          <img src="img/test.jpg" width="26" height="31" alt="рублей">
-          <span class="kg">/кг</span>
-          <h3 class="text-white">
-            <a href="item.html" >Сливочно-лимонное с карамельной присыпкой</a>
+          <span class="Rubles">&#8381</span>
+          <span class="item-weight">/кг</span>
+          <h3 class="title-white">
+            <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
           </h3>
         </article>
 
         <article class="catalog-item">
-          <a href="item.html">
+          <a href="#">
             <img src="img/test.jpg" width="267" height="267">
           </a>
           <span class="cost">320</span>
-          <img src="img/test.jpg" width="26" height="31" alt="рублей">
-          <span class="kg">/кг</span>
-          <h3 class="text-white">
-            <a href="item.html" >Сливочное с шоколадной стружкой</a>
+          <span class="Rubles">&#8381</span>
+          <span class="item-weight">/кг</span>
+          <h3 class="title-white">
+            <a href="#">Сливочное с шоколадной стружкой</a>
           </h3>
         </article>
 
         <article class="catalog-item">
-          <a href="item.html">
+          <a href="#">
             <img src="img/test.jpg"  width="267" height="267">
           </a>
           <span class="cost">440</span>
-          <img src="img/test.jpg" width="26" height="31" alt="рублей">
-          <span class="kg">/кг</span>
-          <h3 class="text-white">
-            <a href="item.html" >Сливочно-ванильное с кусочками шоколада</a>
+          <span class="Rubles">&#8381</span>
+          <span class="item-weight">/кг</span>
+          <h3 class="title-white">
+            <a href="#">Сливочно-ванильное с кусочками шоколада</a>
           </h3>
         </article>
 
         <article class="catalog-item">
-          <a href="item.html">
+          <a href="#">
             <img src="img/test.jpg"  width="267" height="267">
           </a>
           <span class="cost">435</span>
-          <img src="img/test.jpg" width="26" height="31" alt="рублей">
-          <span class="kg">/кг</span>
-          <h3 class="text-white">
-            <a href="item.html" >Сливочноe с ментоловым сиропом</a>
+          <span class="Rubles">&#8381</span>
+          <span class="item-weight">/кг</span>
+          <h3 class="title-white">
+            <a href="#">Сливочноe с ментоловым сиропом</a>
           </h3>
         </article>
 
         <article class="catalog-item">
-          <a href="item.html">
+          <a href="#">
             <img src="img/test.jpg"  width="267" height="267">
           </a>
           <span class="cost">355</span>
-          <img src="img/test.jpg" width="26" height="31" alt="рублей">
-          <span class="kg">/кг</span>
-          <h3 class="text-white">
-            <a href="item.html" >Сливочное с кусочками черного шоколада</a>
+          <span class="Rubles">&#8381</span>
+          <span class="item-weight">/кг</span>
+          <h3 class="title-white">
+            <a href="#">Сливочное с кусочками черного шоколада</a>
           </h3>
         </article>
 
         <article class="catalog-item">
-          <a href="item.html">
+          <a href="#">
             <img src="img/test.jpg" width="267" height="267">
           </a>
           <span class="cost">420</span>
-          <img src="img/test.jpg" width="26" height="31" alt="рублей">
-          <span class="kg">/кг</span>
-          <h3 class="text-white">
-            <a href="item.html" >Сливочное с мятным сиропом</a>
+          <span class="Rubles">&#8381</span>
+          <span class="item-weight">/кг</span>
+          <h3 class="title-white">
+            <a href="#">Сливочное с мятным сиропом</a>
           </h3>
         </article>
 
@@ -216,26 +268,26 @@
       <nav class="paginator">
         <span><img src="img/test.jpg" width="8" height="12" alt="назад"></span>
         <span>1</span>
-        <a href="creamy-2.html">2</a>
-        <a href="creamy-3.html">3</a>
-        <a href="creamy-4.html">4</a>
-        <a href="creamy-5.html">5</a>
-        <a href="creamy-2.html"><img src="img/test.jpg" width="8" height="12" alt="вперед"></a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#"><img src="img/test.jpg" width="8" height="12" alt="вперед"></a>
       </nav>
     </main>
 
     <footer>
       <div class="social">
-        <a href="https://twitter.com"><img src="img/test.jpg" width="32" height="32" alt="Twitter"></a>
-        <a href="https://www.instagram.com"><img src="img/test.jpg" width="32" height="32" alt="Instagram"></a>
-        <a href="https://www.facebook.com/"><img src="img/test.jpg" width="32" height="32" alt="Facebook" ></a>
-        <a href="https://vk.com/"><img src="img/test.jpg" width="32" height="32" alt="В контакте"></a>
+        <a href="#"><img src="img/test.jpg" width="32" height="32" alt="Twitter"></a>
+        <a href="#"><img src="img/test.jpg" width="32" height="32" alt="Instagram"></a>
+        <a href="#"><img src="img/test.jpg" width="32" height="32" alt="Facebook"></a>
+        <a href="#"><img src="img/test.jpg" width="32" height="32" alt="В контакте"></a>
       </div>
       <ul class="footer-text">
-        <li class="footer-favorite"> <a href="Suppliers.html">Для поставщиков</a></li>
-        <li><a href="suppliers.html">О производстве</a></li>
-        <li><a href="production.html">Наши документы</a></li>
-        <li><a href="ecology.html">Экологические стандарты<a></li>
+        <li class="footer-favorite"> <a href="#">Для поставщиков</a></li>
+        <li><a href="#">О производстве</a></li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">Экологические стандарты<a></li>
       </ul>
       <div class="footer-info">
         <a href="https://htmlacademy.ru/" class="logo-htmlacademy">
