@@ -3,21 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="/css/style.css" rel="Stylesheet">
+    <link href="./css/style.css" rel="Stylesheet">
   </head>
   <body>
 
     <header>
       <a href="index.html" class="logo">
-        <img src="img/test.jpg" width="154" height="64" alt="Gllacy Shop">
+        <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
       </a>
-      </span>
       <nav class="main-menu">
-           <button class="button" class="header-button" name="catalog">Каталог</button>
+           <button class="header-button-nav" type="button" name="catalog">Каталог</button>
            <a href="#">Доставка и оплата</a>
            <a href="#">О компании</a>
            <div class="dropdown-catalog">
-             <ul class="text-small">
+             <ul class="title-small">
                <li><a href="#"><b>Новинки</b></a></li>
                <li><a href="creamy.html">Сливочное</a></li>
                <li><a href="#">Щербеты</a></li>
@@ -26,94 +25,125 @@
              </ul>
            </div>
       </nav>
-      <button class="button" class="header-button" name="search">Поиск</button>
-      <button class="button" class="header-button" name="login">Вход</button>
-      <button class="button" class="header-button" name="basket">Пусто</button>
-      <!--Выпадающие формы-->
-            <form class="dropdown-search">
-            <fieldset class=search-group>
-              <input class="textfield"  type="text" name="search-query" placeholder="Что ищем?">
-            </fieldset>
-            </form>
+      <button class="header-button" type="button" name="search">Поиск</button>
+      <button class="header-button" type="button" name="login">Вход</button>
+      <button class="header-button" type="button" name="basket">Пусто</button>
 
-            <form class="dropdown-login">
-              <fieldset class=login-group>
-                <input class="textfield"  type="email" name="login-email" placeholder="Электронная почта">
-                <input class="textfield"  type="password" name="login-password" placeholder="Пароль">
-                <button class="button" type="submit" name="Enter">Войти</button>
-                <div class="login-links">
-                  <a class="text-dropdown" href="#">Забыли пароль?</a>
-                  <a class="text-dropdown" href="#">Новая регистрация</a>
-                </div>
-              </fieldset>
-            </form>
+<!--Выпадающие формы-->
+<form class="dropdown-search">
+  <fieldset class=search-group>
+    <label class="textfield">
+      <input type="text" name="search-query" placeholder="Что ищем?">
+    </label>
+  </fieldset>
+</form>
 
-            <form class="dropdown-basket">
-              <fieldset class=basket-group>
-                <div class="basket-row">
-                  <img src="img/test.jpg" width="12" height="12" alt="Удалить">
-                  <img src="img/test.jpg" width="33" height="33">
-                  <p class="text-dropdown">Пломбир с апельсиновым джемом</p>
-                  <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">200 руб.</span>
-                  <span class="text-dropdown">300 руб.</span>
-                </div>
-                <div class="basket-row">
-                  <img src="img/test.jpg" width="12" height="12" alt="Удалить">
-                  <img src="img/test.jpg" width="33" height="33">
-                  <p class="text-dropdown">Клубничный пломбир с присыпкой из белого шоколада</p>
-                  <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">300 руб.</span>
-                  <span class="text-dropdown">450 руб.</span>
-                </div>
-                <span class="text-dropdown"><b>Итого:750 руб.</b></span>
-                <button class="button" type="submit" name="Order">Оформить заказ</button>
-              </fieldset>
-            </form>
+<form class="dropdown-login">
+  <fieldset class=login-group>
+    <label class="textfield">
+      <input type="email" name="login-email" placeholder="Электронная почта">
+    </label>
+    <label class="textfield">
+      <input type="password" name="login-password" placeholder="Пароль">
+    </label>
+    <button class="button-small" type="submit" name="Enter">Войти</button>
+    <div class="login-links">
+      <a href="#" class="text-dropdown">Забыли пароль?</a>
+      <a href="#" class="text-dropdown">Новая регистрация</a>
+    </div>
+  </fieldset>
+</form>
 
-      <!--Контакты-->
-            <div class="header-contacts">
-              <p class="time">С 10 до 20, ежедневно</p>
-              <p class="phone">8 812 450-25-25</p>
-            </div>
-            </header>
+<form class="dropdown-basket">
+  <fieldset class=basket-group>
+    <div class="basket-row">
+      <button type="button" class="basket-delete">
+        <img src="img/cross-small.svg" width="12" height="12" alt="Удалить">
+      </button>
+      <img src="img/1.png" width="33" height="33">
+      <p class="text-dropdown">Пломбир с апельсиновым джемом</p>
+      <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">200 руб.</span>
+      <span class="text-dropdown">300 руб.</span>
+    </div>
+    <div class="basket-row">
+      <button type="button" class="basket-delete">
+        <img src="img/cross-small.svg" width="12" height="12" alt="Удалить">
+      </button>
+      <img src="img/3.png" width="33" height="33">
+      <p class="text-dropdown">Клубничный пломбир с присыпкой из белого шоколада</p>
+      <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">300 руб.</span>
+      <span class="text-dropdown">450 руб.</span>
+    </div>
+    <span class="text-dropdown"><b>Итого:750 руб.</b></span>
+    <button class="button-small" type="submit"  name="Order">Оформить заказ</button>
+  </fieldset>
+</form>
+
+<!--Контакты-->
+      <div class="header-contacts">
+        <p class="time">С 10 до 20, ежедневно</p>
+        <p class="phone">8 812 450-25-25</p>
+      </div>
+      </header>
 
 
-
-<!--filters-->
     <main>
       <nav class="breadcrumbs">
         <a href="index.html">Главная</a>»
         <a href="#">Каталог</a>»
         <span>Сливочное</span>
       </nav>
-      <h1 class="title">Сливочное мороженое</h1>
+      <h1 class="catalog-title">Сливочное мороженое</h1>
+
+<!--filters-->
       <form class="filters">
         <fieldset class="select">
           <legend>Сортировка:</legend>
           <select name="sort">
-            <option value="ин-popular" selected>по популярности</option>
+            <option value="by-popular" selected>по популярности</option>
             <option value="by-cheap">сначала недорогие</option>
             <option value="by-expensive">сначала дорогие</option>
             <option value="by-fat">по жирности</option>
           </select>
         </fieldset>
-        <fieldset class="range-slider">
+        <fieldset class="range-group">
           <legend>Цена:<div>100 руб. – 500 руб.</div></legend>
-             <input type="range" multiple min="0" step="1" max="10" data-values="1 9">
+            <label class="range">
+              <input id="cost-range" multiple min="0" step="50" max="500" data-values="1 450">
+            </label>
         </fieldset>
-        <fieldset class="radio">
+        <fieldset class="radio-group">
           <legend>Жирность</legend>
-          <input type="radio" name="fat" value="0">0%
-          <input type="radio" name="fat" value="to-10" checked>до 10%
-          <input type="radio" name="fat" value="to-30">до 30%
-          <input type="radio" name="fat" value="above-30">выше 30%
+          <label class="radio">
+            <input id="radio-0" type="radio" name="fat" value="0">0%
+          </label>
+          <label class="radio">
+            <input id="radio-to-10" type="radio" name="fat" value="to-10" checked>до 10%
+          </label>
+          <label class="radio">
+            <input id="radio-to-30" type="radio" name="fat" value="to-30">до 30%
+          </label>
+          <label class="radio">
+            <input id="radio-above-30" type="radio" name="fat" value="above-30">выше 30%
+          </label>
         </fieldset>
-        <fieldset class="checkbox">
+        <fieldset class="checkbox-group">
           <legend>Наполнители</legend>
-          <input type="checkbox" name="adds" value="chokolate" checked>шоколадные
-          <input type="checkbox" name="adds" value="sugar">сахарные присыпки
-          <input type="checkbox" name="adds" value="fruits">фрукты
-          <input type="checkbox" name="adds" value="syrup">сиропы
-          <input type="checkbox" name="adds" value="jam">джемы
+          <label class="checkbox">
+            <input id="checkbox-chokolate" type="checkbox" name="adds" value="chokolate" checked>шоколадные
+          </label>
+          <label class="checkbox">
+            <input id="checkbox-sugar" type="checkbox" name="adds" value="sugar">сахарные присыпки
+          </label>
+          <label class="checkbox">
+            <input id="checkbox-fruits" type="checkbox" name="adds" value="fruits">фрукты
+          </label>
+          <label class="checkbox">
+            <input id="checkbox-syrup" type="checkbox" name="adds" value="syrup">сиропы
+          </label>
+          <label class="checkbox">
+            <input id="checkbox-jam" type="checkbox" name="adds" value="jam">джемы
+          </label>
         </fieldset>
         <button type="submit" name="Apply" class="botton-line">Применить</button>
       </form>
@@ -123,7 +153,7 @@
       <section class="catalog">
         <article class="catalog-item">
           <a href="#">
-            <img src="img/test.jpg"  width="267" height="267">
+            <img src="img/1.png"  width="267" height="267">
           </a>
           <span class="cost">310</span>
           <span class="cost">&#8381</span>
@@ -135,7 +165,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <img src="img/test.jpg"  width="267" height="267">
+            <img src="img/2.png"  width="267" height="267">
           </a>
           <span class="cost">380</span>
           <span class="cost">&#8381</span>
@@ -147,7 +177,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <img src="img/test.jpg"  width="267" height="267">
+            <img src="img/3.png"  width="267" height="267">
           </a>
           <span class="cost">355</span>
           <span class="cost">&#8381</span>
@@ -159,7 +189,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <img src="img/test.jpg" width="267" height="267">
+            <img src="img/4.png" width="267" height="267">
           </a>
           <span class="cost">415</span>
           <span class="cost">&#8381</span>
@@ -171,7 +201,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <img src="img/test.jpg"  width="267" height="267">
+            <img src="img/5.png"  width="267" height="267">
           </a>
           <span class="cost">325</span>
           <span class="cost">&#8381</span>
@@ -183,7 +213,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <img src="img/test.jpg"  width="267" height="267">
+            <img src="img/6.png"  width="267" height="267">
           </a>
           <span class="cost">410</span>
           <span class="cost">&#8381</span>
@@ -195,7 +225,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <img src="img/test.jpg"  width="267" height="267">
+            <img src="img/7.png"  width="267" height="267">
           </a>
           <span class="cost">375</span>
           <span class="cost">&#8381</span>
@@ -207,7 +237,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <img src="img/test.jpg" width="267" height="267">
+            <img src="img/8.png" width="267" height="267">
           </a>
           <span class="cost">320</span>
           <span class="cost">&#8381</span>
@@ -219,7 +249,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <img src="img/test.jpg"  width="267" height="267">
+            <img src="img/9.png"  width="267" height="267">
           </a>
           <span class="cost">440</span>
           <span class="cost">&#8381</span>
@@ -231,7 +261,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <img src="img/test.jpg"  width="267" height="267">
+            <img src="img/10.png"  width="267" height="267">
           </a>
           <span class="cost">435</span>
           <span class="cost">&#8381</span>
@@ -243,7 +273,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <img src="img/test.jpg"  width="267" height="267">
+            <img src="img/11.png"  width="267" height="267">
           </a>
           <span class="cost">355</span>
           <span class="cost">&#8381</span>
@@ -255,7 +285,7 @@
 
         <article class="catalog-item">
           <a href="#">
-            <img src="img/test.jpg" width="267" height="267">
+            <img src="img/12.png" width="267" height="267">
           </a>
           <span class="cost">420</span>
           <span class="cost">&#8381</span>
@@ -278,24 +308,25 @@
       </nav>
     </main>
 
+<!--footer-->
     <footer>
       <div class="social">
-        <a href="#"><img src="img/test.jpg" width="32" height="32" alt="Twitter"></a>
-        <a href="#"><img src="img/test.jpg" width="32" height="32" alt="Instagram"></a>
-        <a href="#"><img src="img/test.jpg" width="32" height="32" alt="Facebook"></a>
-        <a href="#"><img src="img/test.jpg" width="32" height="32" alt="В контакте"></a>
+        <a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Twitter"></a>
+        <a href="#"><img src="img/instagram.svg" width="32" height="32" alt="Instagram"></a>
+        <a href="#"><img src="img/fb.svg" width="32" height="32" alt="Facebook"></a>
+        <a href="#"><img src="img/vk.svg" width="32" height="32" alt="В контакте"></a>
       </div>
-      <ul class="footer-text">
-        <li class="footer-favorite"> <a href="#">Для поставщиков</a></li>
+      <ul class="footer-nav">
+        <li class="footer-favorite"> <a href="#"><b>Для поставщиков</b></a></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты<a></li>
       </ul>
       <div class="footer-info">
         <a href="https://htmlacademy.ru/" class="logo-htmlacademy">
-          <img src="img/test.jpg" width="108" height="39" alt="HTML Academy">
+          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
         </a>
-        <p class="footer-text">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
+        <p class="text-nav-white">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
       </div>
     </footer>
   </body>

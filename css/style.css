@@ -6,16 +6,17 @@
     url("font/roboto.woff") format("woff");
 }
 
-html,
 body {
     font-family: "Roboto", "Arial", sans-serif;
-    text-align: left;
+    background-color: #849D8F;
 }
 
-a:link {
+a:link,
+a:visited {
   color: #ffffff;
   border-bottom: 1px solid;
   border-bottom-color: rgba(255,255,255,0.2);
+  text-decoration: none;
 }
 
 a:hover,
@@ -23,27 +24,29 @@ a:active {
   color: #ffbc9e;
   border-bottom: 1px solid;
   border-bottom-color: rgba(255,188,158,0.2);
+  text-decoration: none;
 }
 
 h1 {
-  font-family: "Roboto-bold", "Arial", sans-serif;
   font-size: 60px;
-  line-height:60px;
+  font-weight: bold;
+  line-height:1;
   color: #ffffff;
 }
 
 h2 {
-  font-family: "Roboto-bold", "Arial", sans-serif;
   font-size: 35px;
-  line-height:41px;
+  font-weight: bold;
+  line-height:1.17;
   color: #ffffff;
 }
 
 h3 {
   font-size: 16px;
+  font-weight: bold;
   color: #ffffff;
   font-weight: bold;
-  line-height: 22px;
+  line-height: 1.375;
 }
 
 h4 {
@@ -159,4 +162,9 @@ h5 {
   height: 25px;
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer {
+  font-size: 13px;
+  color: #ffffff;
 }
