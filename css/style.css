@@ -1,16 +1,10 @@
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  src:
-    local("Roboto-regular"),
-    url("font/roboto.woff") format("woff");
-}
 
 body {
     font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
     background-color: #849D8F;
 }
-
+/* Cтили текста */
 a:link,
 a:visited {
   color: #ffffff;
@@ -29,36 +23,38 @@ a:active {
 
 h1 {
   font-size: 60px;
-  font-weight: bold;
+  font-weight: 700;
   line-height:1;
   color: #ffffff;
+  text-align: center;
+  width: 750px;
 }
 
 h2 {
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 700;
   line-height:1.17;
   color: #ffffff;
 }
 
 h3 {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
   font-weight: bold;
   line-height: 1.375;
 }
 
 h4 {
-  font-size: 1.25;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 700;
   color: #323232;
   text-align: left;
 }
 
 h5 {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.429;
   text-align: left;
   color: #323232;
@@ -66,19 +62,21 @@ h5 {
 
 .text {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.375;
   text-align: left;
-  color:#323232
+  color:#323232;
 }
-
 
 .text-dropdown{
   font-size: 13px;
+  font-weight: 400;
   color: #323232;
   line-height: 1.143;
 }
 
 .text-dropdown-ref {
+  font-weight: 400;
   font-size: 13px;
   color: #999999;
   line-height: 1.143;
@@ -86,17 +84,20 @@ h5 {
 
 .main-menu {
   font-size: 16px;
+  font-weight: 500;
+  font-weight: bold;
 }
 
 .header-button {
   font-size: 14px;
+  font-weight: 500;
   color: #ffffff;
 }
 
 .time {
   font-size: 14px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.143;
   text-align: right;
 }
@@ -104,7 +105,7 @@ h5 {
 .phone {
   font-size: 22px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.091;
   text-align: right;
 }
@@ -112,7 +113,7 @@ h5 {
 .cost {
   font-size: 45px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
@@ -120,7 +121,7 @@ h5 {
 .item-weight {
   font-size: 30px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
@@ -128,6 +129,7 @@ h5 {
 .subtitle {
   font-size: 18px;
   color: #323232;
+  font-weight: 400;
   line-height: 1.333;
   text-align: left;
 }
@@ -135,21 +137,24 @@ h5 {
 .catalog-title {
   font-size: 35px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.171;
 }
 
 .filters {
   font-size: 14px;
   color: #ffffff;
+  font-weight: 400;
   line-height: 1.143;
 }
 
 .paginator:link {
   color: #ffffff;
+  font-weight: 400;
 }
 .paginator:active {
   color: #323232;
+  font-weight: 400;
   width: 25px;
   height: 25px;
   border-radius: 12px;
@@ -158,6 +163,7 @@ h5 {
 
 .paginator:hover {
   color: #ffffff;
+  font-weight: 400;
   width: 25px;
   height: 25px;
   border-radius: 12px;
@@ -166,5 +172,72 @@ h5 {
 
 .footer {
   font-size: 13px;
+  font-weight: 400;
   color: #ffffff;
+}
+
+.Title-white {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.222;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* Cтили кнопок */
+.header-button-nav {
+  height: 32px;
+  border: 0px;
+  border-radius: 16px;
+  font-weight: bold;
+  padding-left:14px;
+  padding-right:14px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: rgba(105, 105, 105, 0.004);
+}
+
+.header-button-nav:link,
+.header-button-nav:visited {
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(255,255,255,0.2);
+}
+
+.header-button-nav:hover {
+  background-color: #f7f6f3;
+  color: #333333;
+}
+
+.header-button-nav:active {
+  background-color: #ededed;
+  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+}
+
+
+.header-button {
+  height: 32px;
+  border: 0px;
+  border-radius: 16px;
+  font-weight: bold;
+  padding-left:14px;
+  padding-right:14px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header-button:link,
+.header-button:visited {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header-button:hover {
+  background-color: rgba(105, 105, 105, 0.004);
+}
+
+.header-button:active {
+  background-color: #ededed;
+  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
 }
