@@ -16,66 +16,73 @@
            <button class="header-button-nav" type="button" name="catalog">Каталог</button>
            <a href="#">Доставка и оплата</a>
            <a href="#">О компании</a>
-           <div class="dropdown-catalog">
-             <ul class="title-small">
-               <li><a href="#"><b>Новинки</b></a></li>
-               <li><a href="creamy.html">Сливочное</a></li>
-               <li><a href="#">Щербеты</a></li>
-               <li><a href="#">Фруктовый лед</a></li>
-               <li><a href="#">Мелорин</a></li>
-             </ul>
-           </div>
+
+          <div class="dropdown-form">
+            <ul class="dropdown-navigation">
+              <li><a href="#"><b>Новинки</b></a></li>
+              <li><a href="creamy.html">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </div>
+
       </nav>
       <button class="header-button" type="button" name="search">Поиск</button>
       <button class="header-button" type="button" name="login">Вход</button>
       <button class="header-button" type="button" name="basket">Пусто</button>
 
 <!--Выпадающие формы-->
-      <form class="dropdown-search">
-        <fieldset class=search-group>
-          <label class="textfield">
-            <input type="text" name="search-query" placeholder="Что ищем?">
-          </label>
-        </fieldset>
-      </form>
+      <div class="dropdown-form">
+        <form class="dropdown-search">
+          <fieldset class=search-group>
+            <label class="textfield">
+              <input type="text" name="search-query" placeholder="Что ищем?">
+            </label>
+          </fieldset>
+        </form>
+      </div>
 
-      <form class="dropdown-login">
-        <fieldset class=login-group>
-          <label class="textfield">
-            <input type="email" name="login-email" placeholder="Электронная почта">
-          </label>
-          <label class="textfield">
-            <input type="password" name="login-password" placeholder="Пароль">
-          </label>
-          <button class="button-small" type="submit" name="Enter">Войти</button>
-          <div class="login-links">
-            <a href="#" class="text-dropdown">Забыли пароль?</a>
-            <a href="#" class="text-dropdown">Новая регистрация</a>
-          </div>
-        </fieldset>
-      </form>
+      <div class="dropdown-form">
+        <form class="dropdown-login">
+          <fieldset class=login-group>
+            <label class="textfield">
+              <input type="email" name="login-email" placeholder="Электронная почта">
+            </label>
+            <label class="textfield">
+              <input type="password" name="login-password" placeholder="Пароль">
+            </label>
+            <button class="button-small" type="submit" name="Enter">Войти</button>
+            <div class="login-links">
+              <a href="#" class="text-dropdown">Забыли пароль?</a>
+              <a href="#" class="text-dropdown">Новая регистрация</a>
+            </div>
+          </fieldset>
+        </form>
+      </div>
 
-      <form class="dropdown-basket">
-        <fieldset class=basket-group>
-          <div class="basket-row">
-            <button type="button" class="basket-delete"> Удалить </button>
-            <img src="img/1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <p class="text-dropdown">Пломбир с апельсиновым джемом</p>
-            <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">200 руб.</span>
-            <span class="text-dropdown">300 руб.</span>
-          </div>
-          <div class="basket-row">
-            <button type="button" class="basket-delete"> Удалить</button>
-            <img src="img/3.jpg" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <p class="text-dropdown">Клубничный пломбир с присыпкой из белого шоколада</p>
-            <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">300 руб.</span>
-            <span class="text-dropdown">450 руб.</span>
-          </div>
-          <span class="text-dropdown"><b>Итого:750 руб.</b></span>
-          <button class="button-small" type="submit"  name="Order">Оформить заказ</button>
-        </fieldset>
-      </form>
-
+      <div class="dropdown-form">
+        <form class="dropdown-basket">
+          <fieldset class=basket-group>
+            <div class="basket-row">
+              <button type="button" class="basket-delete"> Удалить </button>
+              <img src="img/1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <p class="text-dropdown">Пломбир с апельсиновым джемом</p>
+              <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">200 руб.</span>
+              <span class="text-dropdown">300 руб.</span>
+            </div>
+            <div class="basket-row">
+              <button type="button" class="basket-delete"> Удалить</button>
+              <img src="img/3.jpg" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <p class="text-dropdown">Клубничный пломбир с присыпкой из белого шоколада</p>
+              <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">300 руб.</span>
+              <span class="text-dropdown">450 руб.</span>
+            </div>
+            <span class="text-dropdown"><b>Итого:750 руб.</b></span>
+            <button class="button-small" type="submit"  name="Order">Оформить заказ</button>
+          </fieldset>
+        </form>
+      </div>
 <!--Контакты-->
       <div class="header-contacts">
         <p class="time">С 10 до 20, ежедневно</p>
@@ -102,7 +109,7 @@
           <label class="textfield">
             <input type="email" name="user-email" placeholder="Ваша почта для ответа?">
           </label>
-          <textarea class="textfield name="message">Напишите что-нибудь...</textarea>
+          <textarea class="textfield name="message" >Напишите что-нибудь...</textarea>
           <button class="button-small" type="submit" name="Send">Отправить</button>
         </fieldset>
       </form>
@@ -110,7 +117,7 @@
 
     <main>
       <!--offers-->
-      <div class="vidgets">
+      <div class="vidget">
         <article class="vidget-raspberry">
           <h2>Малинка даром!</h2>
           <p class="title-white">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -184,10 +191,10 @@
       </div>
 
       <!--vidgets-->
-      <div class="vidget">
+      <div class="vidgets">
         <article class="vidget-blog">
           <small class="text">Новое в нашем блоге</small>
-          <h4 class="vidget-title">
+          <h4 class="vidget-blog-title">
             <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
           </h4>
         </article>
