@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="./css/style.css" rel="Stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="./css/style.css" rel="Stylesheet">
   </head>
 
   <body>
@@ -13,17 +13,17 @@
         <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
       </span>
       <nav class="main-menu">
-           <button class="header-button-nav" type="button" name="catalog">Каталог</button>
-           <a href="#">Доставка и оплата</a>
-           <a href="#">О компании</a>
+           <a href="#" class="main-menu-links">Каталог</a>
+           <a href="#" class="main-menu-links">Доставка и оплата</a>
+           <a href="#" class="main-menu-links">О компании</a>
 
-          <div class="dropdown-form">
+          <div class="dropdown-catalog">
             <ul class="dropdown-navigation">
-              <li><a href="#"><b>Новинки</b></a></li>
-              <li><a href="creamy.html">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
+              <li><a href="#" class="dropdown-list"><b>Новинки</b></a></li>
+              <li><a href="creamy.html" class="dropdown-list">Сливочное</a></li>
+              <li><a href="#" class="dropdown-list">Щербеты</a></li>
+              <li><a href="#" class="dropdown-list">Фруктовый лед</a></li>
+              <li><a href="#" class="dropdown-list">Мелорин</a></li>
             </ul>
           </div>
 
@@ -33,9 +33,9 @@
       <button class="header-button" type="button" name="basket">Пусто</button>
 
 <!--Выпадающие формы-->
-      <div class="dropdown-form">
-        <form class="dropdown-search">
-          <fieldset class=search-group>
+      <div class="dropdown-search">
+        <form class="search">
+          <fieldset class="search-group">
             <label class="textfield">
               <input type="text" name="search-query" placeholder="Что ищем?">
             </label>
@@ -43,9 +43,9 @@
         </form>
       </div>
 
-      <div class="dropdown-form">
-        <form class="dropdown-login">
-          <fieldset class=login-group>
+      <div class="dropdown-login">
+        <form class="login">
+          <fieldset class="login-group">
             <label class="textfield">
               <input type="email" name="login-email" placeholder="Электронная почта">
             </label>
@@ -61,9 +61,9 @@
         </form>
       </div>
 
-      <div class="dropdown-form">
-        <form class="dropdown-basket">
-          <fieldset class=basket-group>
+      <div class="dropdown-basket">
+        <form class="basket">
+          <fieldset class="basket-group">
             <div class="basket-row">
               <button type="button" class="basket-delete"> Удалить </button>
               <img src="img/1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -212,7 +212,7 @@
 
       <!--map-->
      <section class="map">
-       <div class="vidget">
+       <div class="vidget-contacts">
          <h5 class="title-small">Адрес главного офиса и офлайн магазина:</h5>
          <p class="subtitle">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
          <h5 class="title-small">Для заказов по телефону:</h5>
@@ -231,16 +231,16 @@
         <a href="#"><img src="img/vk.svg" width="32" height="32" alt="В контакте"></a>
       </div>
       <ul class="footer-nav">
-        <li class="footer-favorite"> <a href="#"><b>Для поставщиков</b></a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты<a></li>
+        <li class="footer-favorite"> <a href="#" class="footer-link"><b>Для поставщиков</b></a></li>
+        <li><a href="#" class="footer-link">О производстве</a></li>
+        <li><a href="#" class="footer-link">Наши документы</a></li>
+        <li><a href="#" class="footer-link">Экологические стандарты<a></li>
       </ul>
       <div class="footer-info">
         <a href="https://htmlacademy.ru/" class="logo-htmlacademy">
           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
         </a>
-        <p class="text-nav-white">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
+        <p class="footer-text">Сделано в <a href="https://htmlacademy.ru/" class="footer-link">HTML Academy</a> © 2017</p>
       </div>
     </footer>
   </body>
