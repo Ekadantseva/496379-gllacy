@@ -7,26 +7,23 @@
     <link href="./css/style.css" rel="Stylesheet">
   </head>
   <body>
-
     <header>
-      <a href="index.html" class="logo">
+      <span class="logo">
         <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
-      </a>
+      </span>
       <nav class="main-menu">
-        <a href="#" class="main-menu-links">Каталог</a>
-        <a href="#" class="main-menu-links">Доставка и оплата</a>
-        <a href="#" class="main-menu-links">О компании</a>
-
-        <div class="dropdown-catalog">
-          <ul class="dropdown-navigation">
-            <li><a href="#" class="dropdown-list"><b>Новинки</b></a></li>
-            <li><a href="creamy.html" class="dropdown-list">Сливочное</a></li>
-            <li><a href="#" class="dropdown-list">Щербеты</a></li>
-            <li><a href="#" class="dropdown-list">Фруктовый лед</a></li>
-            <li><a href="#" class="dropdown-list">Мелорин</a></li>
-          </ul>
-        </div>
-
+        <div "dropdown-catalog">
+          <a href="#" class="main-menu-links">Каталог</a>
+              <ul class="dropdown-navigation">
+                <li><a href="#" class="dropdown-list"><b>Новинки</b></a></li>
+                <li><a href="creamy.html" class="dropdown-list">Сливочное</a></li>
+                <li><a href="#" class="dropdown-list">Щербеты</a></li>
+                <li><a href="#" class="dropdown-list">Фруктовый лед</a></li>
+                <li><a href="#" class="dropdown-list">Мелорин</a></li>
+              </ul>
+          </div>
+          <a href="#" class="main-menu-links">Доставка и оплата</a>
+          <a href="#" class="main-menu-links">О компании</a>
       </nav>
       <button class="header-button" type="button" name="search">Поиск</button>
       <button class="header-button" type="button" name="login">Вход</button>
@@ -94,8 +91,8 @@
 
     <main>
       <nav class="breadcrumbs">
-        <a href="index.html">Главная</a>»
-        <a href="#">Каталог</a>»
+        <a href="index.html">Главная</a> »
+        <a href="#">Каталог</a> »
         <span>Сливочное</span>
       </nav>
       <h1 class="catalog-title">Сливочное мороженое</h1>
@@ -112,45 +109,53 @@
           </select>
         </fieldset>
         <fieldset class="range-group">
-          <legend>Цена:<div>100 руб. – 500 руб.</div></legend>
-            <label class="range">
-              <input id="cost-range" multiple min="0" step="50" max="500" data-values="1 450">
-            </label>
+          <legend>Цена: 100 руб. – 500 руб.</legend>
+            <div class="range-conteiner">
+              <label class="range">
+                <button type="submit" name="range-minimum" class="range-element"></button>
+                <div class="range-line"></div>
+                <button type="submit" name="range-maximum" class="range-element"></button>
+              </label>
+            </div>
         </fieldset>
         <fieldset class="radio-group">
           <legend>Жирность</legend>
-          <label class="radio">
-            <input id="radio-0" type="radio" name="fat" value="0">0%
-          </label>
-          <label class="radio">
-            <input id="radio-to-10" type="radio" name="fat" value="to-10" checked>до 10%
-          </label>
-          <label class="radio">
-            <input id="radio-to-30" type="radio" name="fat" value="to-30">до 30%
-          </label>
-          <label class="radio">
-            <input id="radio-above-30" type="radio" name="fat" value="above-30">выше 30%
-          </label>
+            <div class="radio-conteiner">
+              <label class="radio">
+                <input id="radio-0" type="radio" name="fat" value="0">0%
+              </label>
+              <label class="radio">
+                <input id="radio-to-10" type="radio" name="fat" value="to-10" checked>до 10%
+              </label>
+              <label class="radio">
+                <input id="radio-to-30" type="radio" name="fat" value="to-30">до 30%
+              </label>
+              <label class="radio">
+                <input id="radio-above-30" type="radio" name="fat" value="above-30">выше 30%
+              </label>
+            <div>
         </fieldset>
         <fieldset class="checkbox-group">
           <legend>Наполнители</legend>
-          <label class="checkbox">
-            <input id="checkbox-chokolate" type="checkbox" name="adds" value="chokolate" checked>шоколадные
-          </label>
-          <label class="checkbox">
-            <input id="checkbox-sugar" type="checkbox" name="adds" value="sugar">сахарные присыпки
-          </label>
-          <label class="checkbox">
-            <input id="checkbox-fruits" type="checkbox" name="adds" value="fruits">фрукты
-          </label>
-          <label class="checkbox">
-            <input id="checkbox-syrup" type="checkbox" name="adds" value="syrup">сиропы
-          </label>
-          <label class="checkbox">
-            <input id="checkbox-jam" type="checkbox" name="adds" value="jam">джемы
-          </label>
+            <div class="checkbox-conteiner">
+              <label class="checkbox">
+                <input id="checkbox-chokolate" type="checkbox" name="adds" value="chokolate" checked>шоколадные
+              </label>
+              <label class="checkbox">
+                <input id="checkbox-sugar" type="checkbox" name="adds" value="sugar">сахарные присыпки
+              </label>
+              <label class="checkbox">
+                <input id="checkbox-fruits" type="checkbox" name="adds" value="fruits">фрукты
+              </label>
+              <label class="checkbox">
+                <input id="checkbox-syrup" type="checkbox" name="adds" value="syrup">сиропы
+              </label>
+              <label class="checkbox">
+                <input id="checkbox-jam" type="checkbox" name="adds" value="jam">джемы
+              </label>
+            </div>
         </fieldset>
-        <button type="submit" name="Apply" class="button-form">Применить</button>
+        <button type="submit" name="Apply" class="button-filter">Применить</button>
       </form>
 
 
@@ -303,13 +308,13 @@
       </section>
       <!--paginator-->
       <nav class="paginator">
-        <span><img src="img/test.jpg" width="8" height="12" alt="назад"></span>
-        <span>1</span>
+        <span class="arrow-left"><img src="img/test.jpg" width="8" height="12" alt="назад"></span>
+        <span class="first-page">1</span>
         <a href="#">2</a>
         <a href="#">3</a>
         <a href="#">4</a>
         <a href="#">5</a>
-        <a href="#"><img src="img/test.jpg" width="8" height="12" alt="вперед"></a>
+        <a href="#" class="arrow-right"><img src="img/test.jpg" width="8" height="12" alt="вперед"></a>
       </nav>
     </main>
 

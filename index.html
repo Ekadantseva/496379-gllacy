@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="./css/normalize.css" rel="Stylesheet">
     <link href="./css/style.css" rel="Stylesheet">
   </head>
 
@@ -13,20 +14,18 @@
         <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
       </span>
       <nav class="main-menu">
-           <a href="#" class="main-menu-links">Каталог</a>
-           <a href="#" class="main-menu-links">Доставка и оплата</a>
-           <a href="#" class="main-menu-links">О компании</a>
-
-          <div class="dropdown-catalog">
-            <ul class="dropdown-navigation">
-              <li><a href="#" class="dropdown-list"><b>Новинки</b></a></li>
-              <li><a href="creamy.html" class="dropdown-list">Сливочное</a></li>
-              <li><a href="#" class="dropdown-list">Щербеты</a></li>
-              <li><a href="#" class="dropdown-list">Фруктовый лед</a></li>
-              <li><a href="#" class="dropdown-list">Мелорин</a></li>
-            </ul>
+        <div "dropdown-catalog">
+          <a href="#" class="main-menu-links">Каталог</a>
+              <ul class="dropdown-navigation">
+                <li><a href="#" class="dropdown-list"><b>Новинки</b></a></li>
+                <li><a href="creamy.html" class="dropdown-list">Сливочное</a></li>
+                <li><a href="#" class="dropdown-list">Щербеты</a></li>
+                <li><a href="#" class="dropdown-list">Фруктовый лед</a></li>
+                <li><a href="#" class="dropdown-list">Мелорин</a></li>
+              </ul>
           </div>
-
+          <a href="#" class="main-menu-links">Доставка и оплата</a>
+          <a href="#" class="main-menu-links">О компании</a>
       </nav>
       <button class="header-button" type="button" name="search">Поиск</button>
       <button class="header-button" type="button" name="login">Вход</button>
@@ -199,15 +198,19 @@
           </h4>
         </article>
 
-        <form class="vidget-subscription">
-          <p class="text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-          <fieldset>
-            <label class="textfield">
-              <input type="email" name="email" placeholder="Электронная почта">
-            </label>
-            <button class="button-small" type="sumbit" name="send">Отправить</button>
-          </fieldset>
-        </form>
+
+        <div class="vidget-subscription-border">
+          <form class="vidget-subscription">
+            <p class="text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+            <fieldset>
+              <label class="textfield">
+                <input type="email" name="email" placeholder="Электронная почта">
+              </label>
+              <button class="button-small" type="sumbit" name="send">Отправить</button>
+            </fieldset>
+          </form>
+        </div>
+
       </div>
 
       <!--map-->
