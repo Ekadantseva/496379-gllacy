@@ -7,7 +7,6 @@ body {
 .main-header-wrapper {
   min-height: 75px;
   width:1146px;
-  background-color: red;
   display:flex;
   flex-wrap: wrap;
 }
@@ -17,13 +16,11 @@ body {
   height: 64px;
   margin-right:10px;
   padding-top:9px;
-  background-color: orange;
 }
 
 .main-menu {
   width:714px;
   min-height: 75px;
-  background-color: blue;
   display:flex;
   align-items:center;
 }
@@ -31,7 +28,6 @@ body {
 .user-navigation {
   width:267px;
   min-height: 75px;
-  background-color: green;
   display:flex;
   align-items:center;
   justify-content: flex-end;
@@ -41,11 +37,73 @@ body {
   margin-top: 10px;
   width:1146px;
   height: 40px;
-  background-color: brown;
 
 }
-
-.slide-content-wrapper {
+.vidget {
+  min-height: 230px;
   width:1146px;
-  margin: 0 auto;
+  margin-top: -92px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.catalog {
+  margin: 0px;
+  min-height: 322px;
+  width:1146px;
+  display:flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.catalog-item {
+  min-height: 322px;
+  width:267px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.vidget-about {
+  margin-top: 20px;
+}
+
+.vidget-about ul{
+  min-height: 194px;
+  width:1110px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.vidget-about .text-wrapper{
+  width:540px;
+}
+
+.vidgets {
+  width: 1146px;
+  height: 220px;
+  margin-top: 40px;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.subscription-wrapper {
+  width:506px;
+  height: 46px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.subscription-wrapper .textfield {
+  width:370px;
+}
+
+
+.map {
+  width: auto;
+  height: 430px;
+  background-color: red;
 }
