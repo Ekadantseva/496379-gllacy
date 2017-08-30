@@ -7,12 +7,12 @@
     <link href="./css/style.css" rel="Stylesheet">
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <span class="logo">
         <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
       </span>
       <nav class="main-menu">
-        <div "dropdown-catalog">
+        <div class="dropdown-catalog">
           <a href="#" class="main-menu-links">Каталог</a>
               <ul class="dropdown-navigation">
                 <li><a href="#" class="dropdown-list"><b>Новинки</b></a></li>
@@ -25,10 +25,11 @@
           <a href="#" class="main-menu-links">Доставка и оплата</a>
           <a href="#" class="main-menu-links">О компании</a>
       </nav>
-      <button class="header-button" type="button" name="search">Поиск</button>
-      <button class="header-button" type="button" name="login">Вход</button>
-      <button class="header-button" type="button" name="basket">Пусто</button>
-
+      <div class="user-navigation">
+        <button class="header-button" type="button" name="search">Поиск</button>
+        <button class="header-button" type="button" name="login">Вход</button>
+        <button class="header-button" type="button" name="basket">Пусто</button>
+      </div>
 <!--Выпадающие формы-->
 <div class="dropdown-search">
   <form class="search">

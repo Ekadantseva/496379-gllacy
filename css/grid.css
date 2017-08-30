@@ -1,0 +1,51 @@
+html,
+body {
+  min-width: 1146px;
+  min-height: 2416px;
+}
+
+.main-header-wrapper {
+  min-height: 75px;
+  width:1146px;
+  background-color: red;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width:154px;
+  height: 64px;
+  margin-right:10px;
+  padding-top:9px;
+  background-color: orange;
+}
+
+.main-menu {
+  width:714px;
+  min-height: 75px;
+  background-color: blue;
+  display:flex;
+  align-items:center;
+}
+
+.user-navigation {
+  width:267px;
+  min-height: 75px;
+  background-color: green;
+  display:flex;
+  align-items:center;
+  justify-content: flex-end;
+}
+
+.header-contacts {
+  margin-top: 10px;
+  width:1146px;
+  height: 40px;
+  background-color: brown;
+
+}
+
+.slide-content-wrapper {
+  width:1146px;
+  margin: 0 auto;
+}

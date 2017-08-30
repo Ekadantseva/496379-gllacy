@@ -5,17 +5,22 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="./css/normalize.css" rel="Stylesheet">
+      <link href="./css/grid.css" rel="Stylesheet">
     <link href="./css/style.css" rel="Stylesheet">
   </head>
 
   <body>
     <header>
-      <span class="logo">
-        <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
-      </span>
-      <nav class="main-menu">
-        <div "dropdown-catalog">
-          <a href="#" class="main-menu-links">Каталог</a>
+      <div class="main-header-wrapper">
+        <span class="logo">
+          <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
+        </span>
+        <nav class="main-menu">
+          <!--временно скрыт
+          <div "dropdown-catalog">
+          -->
+            <a href="#" class="main-menu-links">Каталог</a>
+          <!--временно скрыт
               <ul class="dropdown-navigation">
                 <li><a href="#" class="dropdown-list"><b>Новинки</b></a></li>
                 <li><a href="creamy.html" class="dropdown-list">Сливочное</a></li>
@@ -23,66 +28,73 @@
                 <li><a href="#" class="dropdown-list">Фруктовый лед</a></li>
                 <li><a href="#" class="dropdown-list">Мелорин</a></li>
               </ul>
+              -->
+            <!--временно скрыт
           </div>
-          <a href="#" class="main-menu-links">Доставка и оплата</a>
-          <a href="#" class="main-menu-links">О компании</a>
-      </nav>
-      <button class="header-button" type="button" name="search">Поиск</button>
-      <button class="header-button" type="button" name="login">Вход</button>
-      <button class="header-button" type="button" name="basket">Пусто</button>
+          -->
+            <a href="#" class="main-menu-links">Доставка и оплата</a>
+            <a href="#" class="main-menu-links">О компании</a>
+        </nav>
+        <div class="user-navigation">
+          <button class="header-button" type="button" name="search">Поиск</button>
+          <button class="header-button" type="button" name="login">Вход</button>
+          <button class="header-button" type="button" name="basket">Пусто</button>
+        </div>
 
-<!--Выпадающие формы-->
-      <div class="dropdown-search">
-        <form class="search">
-          <fieldset class="search-group">
-            <label class="textfield">
-              <input type="text" name="search-query" placeholder="Что ищем?">
-            </label>
-          </fieldset>
-        </form>
-      </div>
+<!--Выпадающие формы--временно скрыты
+        <div class="dropdown-search">
+          <form class="search">
+            <fieldset class="search-group">
+              <label class="textfield">
+                <input type="text" name="search-query" placeholder="Что ищем?">
+              </label>
+            </fieldset>
+          </form>
+        </div>
 
-      <div class="dropdown-login">
-        <form class="login">
-          <fieldset class="login-group">
-            <label class="textfield">
-              <input type="email" name="login-email" placeholder="Электронная почта">
-            </label>
-            <label class="textfield">
-              <input type="password" name="login-password" placeholder="Пароль">
-            </label>
-            <button class="button-small" type="submit" name="Enter">Войти</button>
-            <div class="login-links">
-              <a href="#" class="text-dropdown">Забыли пароль?</a>
-              <a href="#" class="text-dropdown">Новая регистрация</a>
-            </div>
-          </fieldset>
-        </form>
-      </div>
+        <div class="dropdown-login">
+          <form class="login">
+            <fieldset class="login-group">
+              <label class="textfield">
+                <input type="email" name="login-email" placeholder="Электронная почта">
+              </label>
+              <label class="textfield">
+                <input type="password" name="login-password" placeholder="Пароль">
+              </label>
+              <button class="button-small" type="submit" name="Enter">Войти</button>
+              <div class="login-links">
+                <a href="#" class="text-dropdown">Забыли пароль?</a>
+                <a href="#" class="text-dropdown">Новая регистрация</a>
+              </div>
+            </fieldset>
+          </form>
+        </div>
 
-      <div class="dropdown-basket">
-        <form class="basket">
-          <fieldset class="basket-group">
-            <div class="basket-row">
-              <button type="button" class="basket-delete"> Удалить </button>
-              <img src="img/1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <p class="text-dropdown">Пломбир с апельсиновым джемом</p>
-              <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">200 руб.</span>
-              <span class="text-dropdown">300 руб.</span>
-            </div>
-            <div class="basket-row">
-              <button type="button" class="basket-delete"> Удалить</button>
-              <img src="img/3.jpg" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              <p class="text-dropdown">Клубничный пломбир с присыпкой из белого шоколада</p>
-              <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">300 руб.</span>
-              <span class="text-dropdown">450 руб.</span>
-            </div>
-            <span class="text-dropdown"><b>Итого:750 руб.</b></span>
-            <button class="button-small" type="submit"  name="Order">Оформить заказ</button>
-          </fieldset>
-        </form>
-      </div>
+        <div class="dropdown-basket">
+          <form class="basket">
+            <fieldset class="basket-group">
+              <div class="basket-row">
+                <button type="button" class="basket-delete"> Удалить </button>
+                <img src="img/1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <p class="text-dropdown">Пломбир с апельсиновым джемом</p>
+                <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">200 руб.</span>
+                <span class="text-dropdown">300 руб.</span>
+              </div>
+              <div class="basket-row">
+                <button type="button" class="basket-delete"> Удалить</button>
+                <img src="img/3.jpg" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <p class="text-dropdown">Клубничный пломбир с присыпкой из белого шоколада</p>
+                <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">300 руб.</span>
+                <span class="text-dropdown">450 руб.</span>
+              </div>
+              <span class="text-dropdown"><b>Итого:750 руб.</b></span>
+              <button class="button-small" type="submit"  name="Order">Оформить заказ</button>
+            </fieldset>
+          </form>
+        </div>
 <!--Контакты-->
+      </div>
+
       <div class="header-contacts">
         <p class="time">С 10 до 20, ежедневно</p>
         <p class="phone">8 812 450-25-25</p>
@@ -90,8 +102,8 @@
       </header>
 
 <!--slider-->
-      <section class="section-slide">
-        <h1 class="title-section-slide">Крем-брюле и пломбир с малиновым джемом</h1>
+      <section class="slide">
+        <h1 class="title-slide">Крем-брюле и пломбир с малиновым джемом</h1>
         <button type="button" class="button-big" name="contact us">Давайте оба!</button>
         <div class="dots-navigation">
           <button type="button" name="slide-1"></button>
@@ -99,6 +111,7 @@
           <button type="button" name="slide-3"></button>
         </div>
       </section>
+  <!--Временно скрыта --
       <form class="popup" action="#" method="post">
         <fieldset class=contact-us>
           <h3 class="title">Мы обязательно вам ответим!</h3>
@@ -112,7 +125,7 @@
           <button class="button-small" type="submit" name="Send">Отправить</button>
         </fieldset>
       </form>
-
+>
 
     <main>
       <!--offers-->
