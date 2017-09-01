@@ -1,7 +1,7 @@
 body {
-  margin: 0;
-  padding: 0;
-  width: 1200px;
+  padding-left: 27px;
+  padding-right: 27px;
+  width: 1146px;
   margin: 0 auto;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
@@ -21,10 +21,7 @@ fieldset {
   border: none;
 }
 
-
 /* Cтили текста */
-
-
 
 h2 {
   font-size: 35px;
@@ -65,7 +62,7 @@ h5 {
 .text-dropdown{
   font-size: 13px;
   font-weight: 400;
-  line-height: 1.375;
+  line-height: 1.846;
   text-align: left;
   color:#323232
 }
@@ -85,10 +82,9 @@ h5 {
   padding-top:9px;
   font-size: 14px;
   font-weight: 700;
-  height: 23px;
+  min-height: 23px;
   vertical-align: middle;
 }
-
 
 .main-menu-links:link,
 .main-menu-links:visited {
@@ -115,16 +111,39 @@ h5 {
   text-decoration:none;
 }
 
-
 .dropdown-navigation {
   margin: 0px;
-  padding: 0px;
-  list-style: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left:0;
   width: 144px;
-  height: 172px;
   border-radius: 5px;
   background-color: rgb(248, 247, 244);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+.main-menu  > .dropdown-catalog:hover .dropdown-navigation{
+    display:block;
+}
+
+
+.first{
+  margin-bottom: 10px;
+  margin-top:0px;
+}
+/* Почему не работает?*/
+.dropdown-navigation .first::after{
+  content: "";
+  width: 128px;
+  height:1px;
+  background-color: #d1d0ce;
+}
+
+.dropdown-navigation ul{
+  list-style: none;
+  margin:0px;
+  padding:0px;
 }
 
 .dropdown-navigation .dropdown-list {
@@ -150,8 +169,12 @@ h5 {
 
 .dropdown-navigation .dropdown-list:active {
   line-height: 30px;
-  color: #323232;
+  color: #ffffff;
   background-color: #f6b5a5;
+}
+
+.catalog-item .title-white{
+  margin-top: -35px;
 }
 
 .catalog-item a {
@@ -159,7 +182,6 @@ h5 {
   line-height: 1.375;
   font-weight: 500;
   text-align: center;
-
 }
 
 .catalog-item a:link,
@@ -170,8 +192,6 @@ h5 {
   border-bottom: 1px solid;
   border-bottom-color: rgba(255,255,255,0.2);
 }
-
-
 
 .time {
   margin: 0;
@@ -205,16 +225,6 @@ h5 {
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.subtitle {
-  font-size: 18px;
-  color: #323232;
-  font-weight: 400;
-  line-height: 1.333;
-  text-align: left;
-}
-
-
-
 .footer {
   font-size: 13px;
   font-weight: 400;
@@ -228,7 +238,6 @@ h5 {
   text-align: left;
   color: #ffffff;
 }
-
 
 .vidget-blog a {
   font-size: 24px;
@@ -244,12 +253,17 @@ h5 {
   text-decoration: none;
 }
 
+
+.vidget h2{
+  margin:0;
+}
 .vidget .title-white {
   font-size: 18px;
   color: #ffffff;
   font-weight: 700;
   line-height: 1.222;
   text-align: left;
+  margin-top: 20;
 }
 
 .vidget-subscription .text {
@@ -281,7 +295,7 @@ h5 {
 }
 
 .footer-text {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.385;
   font-weight: 400;
   color: #ffffff;
@@ -298,11 +312,12 @@ h5 {
   border-radius: 5px;
   background-color: rgb(248, 247, 244);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
 }
 
 .dropdown-login {
-  width: 278px;
-  height: 215px;
+  width: 250px;
+  min-height: 201px;
   margin-top: 10px;
   padding-top: 14px;
   padding-left: 6px;
@@ -310,6 +325,20 @@ h5 {
   border-radius: 5px;
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
+}
+
+.login input[type=email],
+.login input[type=password] {
+  margin-bottom: 20px;
+}
+
+.login-links{
+  display: inline-block;
+  width:120px;
+  position:relative;
+  top:8px;
+  left: 20px;
 }
 
 .dropdown-login a {
@@ -323,7 +352,7 @@ h5 {
 
 .dropdown-basket {
   width: 540px;
-  height: 243px;
+  min-height: 243px;
   margin-top: 10px;
   padding-top: 14px;
   padding-left: 6px;
@@ -331,6 +360,7 @@ h5 {
   border-radius: 5px;
   background-color: #f8f7f4;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
 }
 
 .basket-row img  {
@@ -358,17 +388,30 @@ h5 {
   width: 700px;
 }
 
+.vidget-raspberry .button-small{
+  position: relative;
+  left: 350px;
+  top:20px;
+}
+
+.vidget-chocolate .button-small{
+  position: relative;
+  left: 330px;
+  top:20px;
+}
+
 .vidget-raspberry {
   width: 520px;
-  height: 189px;
+  min-height: 189px;
   padding: 20px;
   border-radius: 13px;
   background: url("../img/bg-rasberry.jpg") no-repeat #872944;
 }
 
+
 .vidget-chocolate {
   width: 520px;
-  height: 189px;
+  min-height: 189px;
   padding: 20px;
   border-radius: 13px;
   background: url("../img/bg-chokolate.jpg") no-repeat #53302a;
@@ -376,7 +419,7 @@ h5 {
 
 .vidget-about {
   width: 1110px;
-  height: 266px;
+  min-height: 266px;
   padding: 20px;
   border-radius: 13px;
   background: url("../img/wafel-bg.png") #e9dec6;
@@ -435,18 +478,6 @@ h5 {
   border-radius: 10px
 }
 
-/* старый subcr
-.vidget-subscription {
-  width: 508px;
-  height: 168px;
-  padding: 20px;
-  border-radius: 17px;
-  background: #f8f7f4;
-  border: 6px solid;
-  border-image-source: url("../img/border-mail.svg");
-  border-image-slice: 6;
-}
-*/
 
 .catalog img{
   display: block;
@@ -455,7 +486,7 @@ h5 {
 
 .popup {
   width: 478px;
-  height: 442px;
+  min-height: 442px;
   border-radius: 10px;
   background-color: rgb(248, 247, 244);
   padding-left: 24px;
@@ -466,6 +497,12 @@ h5 {
 
 
 /* Кнопки */
+.search-icon {
+  width:17px;
+  height: 17px;
+  background-color: red;
+}
+
 
 .header-button {
   font: inherit;
@@ -582,6 +619,13 @@ h5 {
   box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 1);
   }
 
+.basket-delete {
+  background: url("../img/cross-small.svg") no-repeat rgba(255,255,255,0);
+  width: 9px;
+  height: 11px;
+  border: 0;
+}
+
 footer {
    width: auto;
    height: 100px;
@@ -589,14 +633,45 @@ footer {
 
  .map .vidget-contacts {
    width: 250px;
-   height:242px;
+   min-height:242px;
    padding-left: 26px;
    padding-right:26px;
-   padding-top:34px;
+   padding-top: 28px;
    padding-bottom: 30px;
    background-color: #ffffff;
    border-radius: 13px;
+   position: absolute;
+   margin-top: 62px;
+   margin-left: 870px;
  }
+
+.vidget-contacts .title-small {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.428;
+  text-align: left;
+  font-weight: 400;
+  color:#333333;
+}
+
+.vidget-contacts .subtitle {
+  margin: 0;
+  font-size: 18px;
+  color: #323232;
+  font-weight: 700;
+  line-height: 1.333;
+  text-align: left;
+}
+
+.vidget-contacts .address {
+  margin-top: 9px;
+  margin-bottom: 27px;
+}
+
+
+.vidget-contacts .button-small {
+  margin-top: 20px;
+}
 
 .social img {
   opacity: 0.8;
@@ -672,6 +747,7 @@ input[type=password] {
   background-color: rgb(255, 255, 255);
   height: 32px;
   padding-left: 14px;
+  font-size: 14px;
 }
 
   textarea {
@@ -847,7 +923,7 @@ select option {
 
 .button-filter:active {
    background-color: #eaeaea;
-   box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+   box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 1);
    color: #333333;
 }
 
@@ -857,7 +933,7 @@ select option {
     height: 22px;
     padding-top:3px;
     font-weight: 400;
-    text-align: center;
+    text-align: right;
   }
   .paginator a:link,
   .paginator a:visited {
