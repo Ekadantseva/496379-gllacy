@@ -10,18 +10,18 @@
   </head>
 
 <body>
-  <div class="wrapper">
-    <header>
+  <header>
+    <div class="main-header-container">
       <div class="main-header-wrapper">
         <span class="logo">
           <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
         </span>
         <nav class="main-menu">
 
-           <div "dropdown-catalog">
+           <div class="button-catalog">
              <a href="#" class="main-menu-links">Каталог</a>
              <div class="dropdown-navigation">
-               <a href="#" class="first dropdown-list"><b>Новинки</b></a>
+               <a href="#" class="dropdown-list"><b>Новинки</b></a>
                 <ul>
                   <li><a href="creamy.html" class="dropdown-list">Сливочное</a></li>
                   <li><a href="#" class="dropdown-list">Щербеты</a></li>
@@ -32,12 +32,12 @@
             </div>
 
             <a href="#" class="main-menu-links">Доставка и оплата</a>
-            <a href="#" class="main-menu-links">О компании</a>
+            <a href="#" class="main-menu-links">О Компании</a>
         </nav>
         <div class="user-navigation">
 
           <div class="search">
-            <button class="header-button" type="button" name="search-button" alt="Поиск"></button>
+            <button class="button-search" type="button" name="search-button" alt="Поиск"></button>
             <div class="dropdown-search">
               <form class="search">
                 <fieldset class="search-group">
@@ -50,7 +50,7 @@
           </div>
 
           <div class="login">
-            <button class="header-button" type="button" name="login-button">Вход</button>
+            <button class="button-login" type="button" name="button-login">Вход</button>
             <div class="dropdown-login">
               <form class="login">
                 <fieldset class="login-group">
@@ -71,7 +71,7 @@
           </div>
 
           <div class="basket">
-            <button class="header-button" type="button" name="basket-button">Пусто</button>
+            <button class="button-basket" type="button" name="basket-button">Пусто</button>
             <div class="dropdown-basket">
               <form class="basket">
                 <fieldset class="basket-group">
@@ -99,17 +99,21 @@
               </form>
             </div>
           </div>
+            </div>
 
 <!--Контакты-->
       </div>
 
-      <div class="header-contacts">
-        <p class="time">С 10 до 20, ежедневно</p>
-        <p class="phone">8 812 450-25-25</p>
+        <div class="header-contacts">
+          <p class="time">С 10 до 20, ежедневно</p>
+          <p class="phone">8 812 450-25-25</p>
+        </div>
       </div>
       </header>
 
+
 <!--slider-->
+
       <section class="slide">
         <h1 class="title-slide">Крем-брюле и пломбир с малиновым джемом</h1>
         <button type="button" class="button-big" name="contact us">Давайте оба!</button>
@@ -135,8 +139,10 @@
       </form>
 
 
+
     <main>
       <!--offers-->
+      <div class="main-container">
       <div class="vidget">
         <article class="vidget-raspberry">
           <h2>Малинка даром!</h2>
@@ -153,9 +159,7 @@
       <!--catalog-->
       <section class="catalog">
         <article class="catalog-item">
-          <a href="#">
-            <img src="img/1.jpg"  width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          </a>
+          <img src="img/1.jpg"  width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <div class="cost-wrapper">
             <span class="cost">310</span>
             <span class="cost">&#8381</span>
@@ -166,9 +170,7 @@
           </h3>
         </article>
         <article class="catalog-item">
-          <a href="#">
-            <img src="img/2.jpg"  width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-          </a>
+          <img src="img/2.jpg"  width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           <div class="cost-wrapper">
             <span class="cost">380</span>
             <span class="cost">&#8381</span>
@@ -179,9 +181,7 @@
           </h3>
         </article>
         <article class="catalog-item">
-          <a href="#">
           <img src="img/3.jpg"  width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-          </a>
           <div class="cost-wrapper">
             <span class="cost">355</span>
             <span class="cost">&#8381</span>
@@ -192,9 +192,7 @@
           </h3>
         </article>
         <article class="catalog-item">
-          <a href="#">
           <img src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-          </a>
           <div class="cost-wrapper">
             <span class="cost">415</span>
             <span class="cost">&#8381</span>
@@ -240,13 +238,15 @@
                 <label class="textfield">
                   <input type="email" name="email" placeholder="Электронная почта">
                 </label>
-                <button class="button-small" type="sumbit" name="send">Отправить</button>
+                <div class="subscription-button">
+                  <button class="button-small" type="sumbit" name="send">Отправить</button>
+                </div>
               </fieldset>
             </form>
           </div>
 
       </div>
-
+      </div>
       <!--map-->
        <section class="map">
          <div class="vidget-contacts">
@@ -262,6 +262,7 @@
   </div>
 
 <!--footer-->
+   <div class="footer-container">
     <footer class="main-footer">
       <div class="social">
         <a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Twitter"></a>
@@ -286,6 +287,7 @@
         <p class="footer-text">Сделано в <a href="https://htmlacademy.ru/" class="footer-link">HTML Academy</a> © 2017</p>
       </div>
     </footer>
+  </div>
 
   </body>
 </html>
