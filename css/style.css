@@ -20,6 +20,7 @@ fieldset {
   padding: 0;
 }
 
+
 /* Cтили текста */
 
 h2 {
@@ -271,20 +272,27 @@ h5 {
   font-weight: 500;
   color: #323232;
   margin: 0;
+  padding: 0;
 }
 
 
 .popup input[type=text],
 .popup input[type=email],
 .popup textarea {
-  margin-bottom: 20px;
+  margin-top: 20px;
   color: #999999;
+}
+
+.popup input[type=text],
+.popup input[type=email] {
+  width: 252px;
 }
 
 .popup textarea {
   width:100%;
-  height:155px;
+  height:144px;
   margin-right: 0;
+  margin-bottom: 24px;
   padding-top: 9px;
 }
 
@@ -548,18 +556,38 @@ h5 {
 
 }
 
+
 .popup {
-  width: 412px;
-  min-height: 442px;
+  width: 393px;
+  min-height: 408px;
   border-radius: 10px;
   background-color: rgb(248, 247, 244);
-  padding-left: 15px;
-  padding-right: 31px;
-  padding-top: 10px;
+  padding-left: 26px;
+  padding-right: 44px;
+  padding-top: 14px;
   padding-bottom: 20px;
-  display: none;
+
+  position: absolute;
+  margin: 0 auto;
+  z-index: 20;
 }
 
+.popup .button-small {
+  position: absolute;
+  right: 28px;
+}
+
+.popup .title::before {
+  content: "";
+  position: absolute;
+  width:18px;
+  height: 18px;
+  border-color: red;
+  top:0;
+  left:0;
+  z-index: 200;
+
+}
 
 /* Кнопки */
 
@@ -953,6 +981,67 @@ input[type=password] {
   color: #999999;
 }
 
+input[type="checkbox"],
+ input[type="radio"]{
+    display:none;
+  }
+
+.radio,
+.checkbox {
+  position: relative;
+  padding-left: 31px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.radio input[type="radio"] + .radio-indicator {
+ position: absolute;
+ top: -1px;
+ left: 0;
+
+ width: 25px;
+ height: 25px;
+ background-image: url("../img/radio-off.svg");
+
+ opacity: 0.6;
+}
+
+.radio input[type="radio"]:focus + .radio-indicator {
+ background-image: url("../img/radio-off.svg");
+ opacity: 1.0;
+}
+
+.radio input[type="radio"]:checked + .radio-indicator {
+ background-image: url("../img/radio-on.svg");
+ opacity: 1.0;
+}
+
+
+
+
+
+
+.checkbox input[type="checkbox"] + .checkbox-indicator {
+ position: absolute;
+ top: -1px;
+ left: 0;
+
+ width: 26px;
+ height: 24px;
+ background-image: url("../img/checkbox-off.svg");
+ background-repeat: no-repeat;
+ opacity: 0.6;
+}
+
+.checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+ background-image: url("../img/checkbox-off.svg");
+ opacity: 1.0;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+ background-image: url("../img/checkbox-on.svg");
+ opacity: 1.0;
+}
 /* Страница каталога */
 .breadcrumbs {
   font-size: 14px;
@@ -1057,7 +1146,7 @@ select option {
 }
 
 .range-conteiner {
-  width: 220px;
+  width: 210px;
   height: 36px;
   padding-left: 10px;
   vertical-align: middle;
@@ -1081,18 +1170,19 @@ select option {
 }
 
 .radio-conteiner{
-  width: 415px;
+  width: 400px;
   height: 28px;
-  padding-left: 10px;
+  padding-left: 16px;
+  padding-right: 0px;
   padding-top:8px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 .checkbox-conteiner{
-  width: 702px;
+  width: 690px;
   height: 28px;
-  padding-left: 10px;
+  padding-left: 15px;
   padding-top:8px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -1195,16 +1285,10 @@ select option {
 }
 /* сетка*/
 
-/*.main-header-container {
-  width: 1200px;
-  margin: 0 auto;
-  margin-left:27px;
-  margin-right: 27px;*
-}*/
-
 .container{
   width: 1146px;
   margin: 0 auto;
+  position: relative;
 }
 
 .main-header-wrapper {
@@ -1414,6 +1498,17 @@ main .container{
   right: 27px;
 }
 
+
+.map .vidget-contacts::after {
+  content: "";
+  width:162px;
+  height:98px;
+  position: absolute;
+  background-image: url("../img/pin-shadow.png");
+  left: -570px;
+  top:122px;
+}
+
 .map .vidget-contacts::before {
   content: "";
   width:80px;
@@ -1427,8 +1522,6 @@ main .container{
 .footer-container {
   width: 1146px;
   margin: 0 auto;
-  /*margin-left: 27px;
-  margin-right: 27px;*/
   position: relative;
   top: 470px;
 }
