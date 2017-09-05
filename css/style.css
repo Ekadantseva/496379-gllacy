@@ -1,10 +1,8 @@
 body {
-  margin: 0 auto;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   background-color: #849D8F;
   color:#ffffff;
-  width: 1200px;
 }
 
 a {
@@ -405,8 +403,9 @@ h5 {
 }
 
 .slide {
-  margin-top: -115px;
   padding: 0;
+  margin: 0 auto;
+  margin-top: -115px;
   width: 1146px;
   left: 27px;
   height: 916px;
@@ -464,8 +463,10 @@ h5 {
 
 .vidget-about {
   width: 1110px;
-  min-height: 266px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 17px;
+  padding-bottom: 0px;
+  padding-top: 23px;
   border-radius: 13px;
   background: url("../img/wafel-bg.png") #e9dec6;
 }
@@ -485,17 +486,10 @@ h5 {
 .vidget-about li{
   font-size: 16px;
   line-height: 1.375;
-  margin-bottom: 17px;
+  margin-bottom: 14px;
   padding-top: 17px;
 }
 
-.text-wrapper .apnx-1::before {
-  content: "";
-  width: 50px;
-  height: 50px;
-  background-color: red;
-  background-image: url("../img/ice-cream.svg");
-}
 
 .vidget-blog .text{
   font-size: 16px;
@@ -548,8 +542,9 @@ h5 {
 .vidget-subscription input[type=email]{
   border-radius: 4px;
   height: 42px;
-  width: 350px;
-  margin-top: 15px;
+  width: 352px;
+  margin-top: 19px;
+  margin-left: 10px;
 
 }
 
@@ -822,17 +817,19 @@ footer {
    min-height:242px;
    padding-left: 26px;
    padding-right:26px;
-   padding-top: 28px;
+   padding-top: 30px;
    padding-bottom: 30px;
    background-color: #ffffff;
    border-radius: 13px;
    position: absolute;
    margin-top: 62px;
-   margin-left: 870px;
+   right:0px;
+
  }
 
 .vidget-contacts .title-small {
   margin: 0px;
+  width:175px;
   font-size: 14px;
   line-height: 1.428;
   text-align: left;
@@ -850,13 +847,17 @@ footer {
 }
 
 .vidget-contacts .address {
-  margin-top: 9px;
-  margin-bottom: 27px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.vidget-contacts .phone {
+  margin-top: 5px;
 }
 
 
 .vidget-contacts .button-small {
-  margin-top: 20px;
+  margin-top: 25px;
   width:100%;
 }
 
@@ -958,6 +959,8 @@ input[type=password] {
   font-weight: 400;
   line-height: 16px;
   color: #ffffff;
+  position: absolute;
+  top:-20px;
 }
 
 .breadcrumbs a{
@@ -991,6 +994,7 @@ input[type=password] {
 
 .catalog-title {
   margin-left: 0px;
+  margin-top: 5px;
   text-align: left;
   font-size: 35px;
   color: #ffffff;
@@ -1005,7 +1009,7 @@ input[type=password] {
 .checkbox-wrapper,
 .button-filter-wrapper {
   display: inline-block;
-  margin-right: 17px;
+  margin-right: 12px;
   margin-bottom: 12px;
 }
 
@@ -1191,10 +1195,16 @@ select option {
 }
 /* сетка*/
 
-.main-header-container {
+/*.main-header-container {
   width: 1200px;
+  margin: 0 auto;
   margin-left:27px;
-  margin-right: 27px;
+  margin-right: 27px;*
+}*/
+
+.container{
+  width: 1146px;
+  margin: 0 auto;
 }
 
 .main-header-wrapper {
@@ -1240,10 +1250,7 @@ select option {
   height: 40px;
 }
 
-.main-container{
-  width: 1146px;
-  margin-left:27px;
-  margin-right: 27px;
+main .container{
   position: relative;
 }
 
@@ -1266,12 +1273,22 @@ select option {
   justify-content: space-between;
 }
 
-.cost-wrapper{
+.cost-wrapper,
+.cost-wrapper-index{
   position: relative;
   text-align: left;
   top:-60px;
+  position: relative;
 }
 
+.cost-wrapper-index::before{
+  content: "";
+  width: 61px;
+  height:61px;
+  background-image: url("../img/hit.svg");
+  position: absolute;
+  bottom:195px;
+}
   .catalog-item {
   min-height: 322px;
   width:267px;
@@ -1291,7 +1308,6 @@ select option {
 }
 
 .vidget-about ul{
-  min-height: 194px;
   width:1110px;
   display:flex;
   flex-direction: row;
@@ -1302,6 +1318,7 @@ select option {
   width:490px;
   margin-left: 58px;
   margin-top: 5px;
+  position: relative;
 }
 
 .vidgets {
@@ -1323,6 +1340,47 @@ select option {
 .vidget-about .apnx-4 {
   margin-left: 20px;
 }
+
+.vidget-about .apnx-1::before{
+  content: "";
+  width:49px;
+  height: 49px;
+  background-image: url("../img/ice-cream.svg");
+  position: absolute;
+  left:-58px;
+  top:5px;
+}
+
+.vidget-about .apnx-2::before{
+  content: "";
+  width:49px;
+  height: 49px;
+  background-image: url("../img/eco.svg");
+  position: absolute;
+  left:-58px;
+  top:90px;
+}
+
+.vidget-about .apnx-3::before{
+  content: "";
+  width:49px;
+  height: 49px;
+  background-image: url("../img/cow.svg");
+  position: absolute;
+  left:-40px;
+  top:5px;
+}
+
+.vidget-about .apnx-4::before{
+  content: "";
+  width:49px;
+  height: 49px;
+  background-image: url("../img/thermometer.svg");
+  position: absolute;
+  left:-40px;
+  top:90px;
+}
+
 .subscription-wrapper {
   width:506px;
   height: 46px;
@@ -1341,18 +1399,38 @@ select option {
 .map {
   width: 100%;
   margin-top:40px;
-  margin-left: 27px;
   background-color: red;
   min-height: 430px;
-  position: relative;
-  right:27px;
+  position: absolute;
   background-image: url("../img/map.jpg");
+  background-position: 50% 50%;
+  right:0;
+}
+
+.map .contact-wrapper {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+  right: 27px;
+}
+
+.map .vidget-contacts::before {
+  content: "";
+  width:80px;
+  height:140px;
+  background-image: url("../img/pin.svg");
+  position: absolute;
+  left: -605px;
+  top:75px;
 }
 
 .footer-container {
   width: 1146px;
-  margin-left: 27px;
-  margin-right: 27px;
+  margin: 0 auto;
+  /*margin-left: 27px;
+  margin-right: 27px;*/
+  position: relative;
+  top: 470px;
 }
 .main-footer {
   min-height: 100px;
@@ -1375,22 +1453,34 @@ select option {
 }
 
 .footer-nav {
-  width: 660px;
-padding-left: 10px;
+  width: 640px;
+  padding-left: 18px;
   display: flex;
   justify-content:center;
   height: 37px;
+  position: relative;
+}
+
+.footer-nav .footer-favorite::before {
+  content: '';
+  width: 15px;
+  height: 13px;
+  background-image: url("../img/heart.svg");
+  position: absolute;
+  top: 5px;
+  left: -20px;
 }
 
 .apdx-wrapper {
   margin-left: 30px;
   line-height: 22px;
+  position: relative;
 }
 
 .footer-info {
   width: 190px;
   justify-content: flex-end;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 .footer-info p{
@@ -1407,3 +1497,9 @@ padding-left: 10px;
   justify-content: flex-end;
   margin-right: 27px;
 }
+
+.footer-container-catalog {
+  width: 1146px;
+  margin: 0 auto;
+  position: relative;
+  top: 40px;

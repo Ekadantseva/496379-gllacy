@@ -5,13 +5,12 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="./css/normalize.css" rel="Stylesheet">
-    <link href="./css/grid.css" rel="Stylesheet">
     <link href="./css/style.css" rel="Stylesheet">
   </head>
 
 <body>
   <header>
-    <div class="main-header-container">
+    <div class="container">
       <div class="main-header-wrapper">
         <span class="logo">
           <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
@@ -23,7 +22,7 @@
              <div class="dropdown-navigation">
                <a href="#" class="dropdown-list"><b>Новинки</b></a>
                 <ul>
-                  <li><a href="creamy.html" class="dropdown-list">Сливочное</a></li>
+                  <li ><a href="creamy.html" class="dropdown-list">Сливочное</a></li>
                   <li><a href="#" class="dropdown-list">Щербеты</a></li>
                   <li><a href="#" class="dropdown-list">Фруктовый лед</a></li>
                   <li><a href="#" class="dropdown-list">Мелорин</a></li>
@@ -142,7 +141,7 @@
 
     <main>
       <!--offers-->
-      <div class="main-container">
+      <div class="container">
       <div class="vidget">
         <article class="vidget-raspberry">
           <h2>Малинка даром!</h2>
@@ -160,7 +159,7 @@
       <section class="catalog">
         <article class="catalog-item">
           <img src="img/1.jpg"  width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <div class="cost-wrapper">
+          <div class="cost-wrapper-index">
             <span class="cost">310</span>
             <span class="cost">&#8381</span>
             <span class="item-weight">/кг</span>
@@ -171,7 +170,7 @@
         </article>
         <article class="catalog-item">
           <img src="img/2.jpg"  width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-          <div class="cost-wrapper">
+          <div class="cost-wrapper-index">
             <span class="cost">380</span>
             <span class="cost">&#8381</span>
             <span class="item-weight">/кг</span>
@@ -182,7 +181,7 @@
         </article>
         <article class="catalog-item">
           <img src="img/3.jpg"  width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-          <div class="cost-wrapper">
+          <div class="cost-wrapper-index">
             <span class="cost">355</span>
             <span class="cost">&#8381</span>
             <span class="item-weight">/кг</span>
@@ -193,7 +192,7 @@
         </article>
         <article class="catalog-item">
           <img src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-          <div class="cost-wrapper">
+          <div class="cost-wrapper-index">
             <span class="cost">415</span>
             <span class="cost">&#8381</span>
             <span class="item-weight">/кг</span>
@@ -248,16 +247,20 @@
       </div>
       </div>
       <!--map-->
-       <section class="map">
-         <div class="vidget-contacts">
-           <h5 class="title-small">Адрес главного офиса и офлайн магазина:</h5>
-           <p class="subtitle address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-           <h5 class="title-small">Для заказов по телефону:</h5>
-           <p class="subtitle">8 812 450-25-25</p>
-           <p class="title-small time">(с 10 до 20 ежедневно)</p>
-          <button class="button-small" type="button" name="contact-us">Форма обратной связи</button>
-         </div>
-       </section>
+      </div>
+      <section class="map">
+        <div class="contact-wrapper">
+             <div class="vidget-contacts">
+               <h5 class="title-small">Адрес главного офиса <br>и офлайн магазина:</h5>
+               <p class="subtitle address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+               <h5 class="title-small">Для заказов по телефону:</h5>
+               <p class="subtitle phone">8 812 450-25-25</p>
+               <p class="title-small time">(с 10 до 20 ежедневно)</p>
+               <button class="button-small" type="button" name="contact-us">Форма обратной связи</button>
+             </div>
+        </div>
+      </section>
+
   </main>
   </div>
 
