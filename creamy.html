@@ -11,27 +11,30 @@
     <header>
       <div class="container">
         <div class="main-header-wrapper">
-          <span class="logo">
+          <a href="index.html" class="logo">
             <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
-          </span>
+          </a>
           <nav class="main-menu">
 
-             <div class="button-catalog">
-               <a href="#" class="main-menu-links">Каталог</a>
-               <div class="dropdown-navigation">
-                 <a href="#" class="dropdown-list"><b>Новинки</b></a>
-                  <ul>
-                    <li><a href="creamy.html" class="dropdown-list">Сливочное</a></li>
-                    <li><a href="#" class="dropdown-list">Щербеты</a></li>
-                    <li><a href="#" class="dropdown-list">Фруктовый лед</a></li>
-                    <li><a href="#" class="dropdown-list">Мелорин</a></li>
-                  </ul>
-                </div>
+            <div class="menu-catalog">
+                <a href="#" class="main-menu-links">Каталог</a>
+                <div class="dropdown-navigation-wrapper">
+                  <div class="dropdown-navigation">
+                    <ul>
+                      <li ><a href="#" class="dropdown-list new"><b>Новинки</b></a></li>
+                      <li ><a href="creamy.html" class="dropdown-list">Сливочное</a></li>
+                      <li><a href="#" class="dropdown-list">Щербеты</a></li>
+                      <li><a href="#" class="dropdown-list">Фруктовый лед</a></li>
+                      <li><a href="#" class="dropdown-list">Мелорин</a></li>
+                    </ul>
+                   </div>
+                 </div>
               </div>
-
               <a href="#" class="main-menu-links">Доставка и оплата</a>
               <a href="#" class="main-menu-links">О Компании</a>
           </nav>
+
+
           <div class="user-navigation">
 
             <div class="search">
@@ -136,7 +139,7 @@
         <div class="select-wrapper">
           <fieldset class="select">
             <legend>Сортировка:</legend>
-            <select name="sort">
+            <select class="sort" name="sort">
               <option value="by-popular" selected>по популярности</option>
               <option value="by-cheap">сначала недорогие</option>
               <option value="by-expensive">сначала дорогие</option>
@@ -150,8 +153,8 @@
               <div class="range-conteiner">
                 <label class="range">
                   <div class="range-line"></div>
-                  <button type="submit" name="range-minimum" class="range-element-left"></button>
-                  <button type="submit" name="range-maximum" class="range-element-right"></button>
+                  <button type="submit" name="range-minimum" class="range-element left"></button>
+                  <button type="submit" name="range-maximum" class="range-element right"></button>
                 </label>
               </div>
           </fieldset>

@@ -125,9 +125,10 @@ h5 {
 }
 .menu-catalog{
   position: relative;
+  z-index: 20;
 }
 
-.menu-catalog.hover .dropdown-navigation{
+.menu-catalog:hover .dropdown-navigation{
   display: block;
 }
 
@@ -381,6 +382,8 @@ h5 {
   position: absolute;
   left: -186px;
   top:32px;
+
+  display: none;
 }
 
 .dropdown-login {
@@ -395,14 +398,9 @@ h5 {
   position: absolute;
 
   z-index: 50;
-  display: none;
 }
 
-
-
-
-
-.login:hover .dropdown-login{
+.login:hover .login-wrapper{
   display: block;
 }
 .login {
@@ -1235,12 +1233,17 @@ select {
   border: none;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2);
+  background-image: url("..img/select-link.png");
+  background-repeat: no-repeat;
+  background-position: 88% 0;
+
 
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
   padding-left: 10px;
+  position: relative;
 }
 
 select:hover {
@@ -1248,6 +1251,10 @@ select:hover {
   height: 36px;
   border-radius: 20px;
   background-color: #ffffff;
+  background-image: url("..img/select-hover.png");
+  background-repeat: no-repeat;
+  background-position: 88% 0;
+
 
   font-size: 16px;
   line-height: 18px;
@@ -1260,6 +1267,20 @@ select option {
   color: #333333;
 }
 
+/* не работает
+select::before {
+  content: "";
+  width:12px;
+  height:12px;
+  background-color: red;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 10000;
+}
+*/
+
+
 .range-conteiner {
   width: 210px;
   height: 36px;
@@ -1270,8 +1291,7 @@ select option {
   position: relative;
 }
 
-.range-element-left,
-.range-element-right{
+.range-element{
   width: 20px;
   height: 20px;
   border: none;
@@ -1282,13 +1302,25 @@ select option {
   top:8px;
 }
 
-.range-element-left {
+.left {
   left:35px;
 }
 
-.range-element-right {
+.right {
   left:132px;
 }
+
+.range-element:hover,
+.range-element:active{
+  width: 23px;
+  height: 23px;
+  border: none;
+  border-radius: 17px;
+  background-image: url("../img/filter-button.svg");
+  background-size: cover;
+  top:7px;
+}
+
 
 .range-line {
     width: 176px;
@@ -1684,7 +1716,6 @@ main .container{
 .map {
   width: 100%;
   margin-top:40px;
-  background-color: red;
   min-height: 430px;
   position: absolute;
   background-image: url("../img/map.jpg");
