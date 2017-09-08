@@ -440,6 +440,8 @@ h5 {
   position: absolute;
 }
 
+/* плавающая подпись*/
+
 .login input[type=email],
 .login input[type=password] {
   margin-bottom: 20px;
