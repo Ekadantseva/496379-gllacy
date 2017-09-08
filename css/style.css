@@ -395,7 +395,7 @@ h5 {
   display: block;
 }
 
-.seacrh {
+.search {
   position: relative;
 }
 
@@ -416,8 +416,9 @@ h5 {
 
 .dropdown-login {
   width: 238px;
-  min-height: 201px;
+  min-height: 180px;
   padding-top: 20px;
+  padding-bottom: 22px;
   padding-left: 17px;
   padding-right: 22px;
   border-radius: 5px;
@@ -440,20 +441,21 @@ h5 {
   position: absolute;
 }
 
-/* плавающая подпись*/
 
 .login input[type=email],
 .login input[type=password] {
   margin-bottom: 20px;
   width:225px;
+  font-size: 14px;
 }
 
 .login-links{
   display: inline-block;
   width:120px;
   position:absolute;
-  right: 0;
-  bottom: -6=0px;
+  right: 20px;
+  bottom: 22px;
+  margin-top: 0;
 }
 
 .dropdown-login a {
@@ -631,7 +633,6 @@ h5 {
   width: 352px;
   margin-top: 19px;
   margin-left: 10px;
-
 }
 
 
@@ -651,7 +652,6 @@ h5 {
   z-index: 500;
 
   display: none;
-
 }
 
 .popup-close {
@@ -1128,14 +1128,21 @@ input[type=password]:hover {
 
 input[type=text]:active,
 input[type=email]:active,
-input[type=password]:active,
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=password]:focus  {
+input[type=password]:active{
   border-style: solid;
   border-width: 2px;
   border-color: rgba(46, 136, 228, 0.58);
   height: 40px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(46, 136, 228, 0.58);
+  height: 40px;
+  outline: none;
 }
 
 .float-label {
@@ -1144,6 +1151,9 @@ input[type=password]:focus  {
   bottom: 13px;
   font-size: 16px;
   position: absolute;
+  pointer-events: none;
+  height: auto;
+  width: 200px;
 }
 
 input[type=email]:active + .float-label,
@@ -1153,7 +1163,7 @@ input[type=email]:focus + .float-label,
 input[type=text]:focus+ .float-label,
 input[type=password]:focus + .float-label{
   color: #5b9ddf;
-  transform: translateY(-40px);
+  transform: translateY(-37px);
   font-size: 11px;
 }
 
@@ -1161,7 +1171,7 @@ input[type=email]:invalid + .float-label,
 input[type=text]:invalid + .float-label,
 input[type=password]:invalid  + .float-label{
   font-size: 11px;
-  transform: translateY(-40px);
+  transform: translateY(-37px);
   color: #999999;
 }
 
@@ -1176,8 +1186,68 @@ input[type=password]:invalid  + .float-label{
   color: #999999;
 }
 
+.search .float-label {
+ left: 14px;
+ bottom: 0px;
+ font-size: 14px;
+ position: absolute;
+}
+
+.login .float-label {
+ left: 14px;
+ top: 2px;
+ font-size: 14px;
+ position: absolute;
+}
+
+
+.login input[type=email]:active + .float-label,
+.login input[type=text]:active + .float-label,
+.login input[type=password]:active + .float-label,
+.login input[type=email]:focus + .float-label,
+.login input[type=text]:focus+ .float-label,
+.login input[type=password]:focus + .float-label{
+  color: #5b9ddf;
+  transform: translateY(-30px);
+  font-size: 11px;
+}
+
+.login input[type=email]:invalid + .float-label,
+.login input[type=text]:invalid + .float-label,
+.login input[type=password]:invalid  + .float-label{
+  font-size: 11px;
+  transform: translateY(-30px);
+  color: #999999;
+}
+
+.popup .float-label {
+ left: 14px;
+ top: 2px;
+ font-size: 14px;
+ position: absolute;
+}
+
+.popup input[type=email]:active + .float-label,
+.popup input[type=text]:active + .float-label,
+.popup input[type=password]:active + .float-label,
+.popup input[type=email]:focus + .float-label,
+.popup input[type=text]:focus+ .float-label,
+.popup input[type=password]:focus + .float-label{
+  color: #5b9ddf;
+  transform: translateY(-30px);
+  font-size: 11px;
+}
+
+.popup input[type=email]:invalid + .float-label,
+.popup input[type=text]:invalid + .float-label,
+.popup input[type=password]:invalid  + .float-label{
+  font-size: 11px;
+  transform: translateY(-30px);
+  color: #999999;
+}
+
 input[type="checkbox"],
- input[type="radio"]{
+input[type="radio"]{
     display:none;
   }
 
@@ -1326,17 +1396,16 @@ select {
   border: none;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2);
-  background-image: url("..img/select-link.png");
+  background-image: url("../img/select-link.png");
   background-repeat: no-repeat;
-  background-position: 88% 0;
-
-
+  background-position: 92% 50%;
+  -webkit-appearance: none;
 
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
-  padding-left: 10px;
+  padding-left: 16px;
   position: relative;
 }
 
@@ -1345,9 +1414,9 @@ select:hover {
   height: 36px;
   border-radius: 20px;
   background-color: #ffffff;
-  background-image: url("..img/select-hover.png");
+  background-image: url("../img/select-hover.png");
   background-repeat: no-repeat;
-  background-position: 88% 0;
+  background-position: 92% 50%;
 
 
   font-size: 16px;
@@ -1360,20 +1429,6 @@ select:hover {
 select option {
   color: #333333;
 }
-
-/* не работает
-select::before {
-  content: "";
-  width:12px;
-  height:12px;
-  background-color: red;
-  position: absolute;
-  top:0;
-  left:0;
-  z-index: 10000;
-}
-*/
-
 
 .range-conteiner {
   width: 210px;
@@ -1709,7 +1764,7 @@ main .container{
   z-index: 10000;
   position: absolute;
   top:353px;
-  left: 50px;
+  left: 44px;
 }
 
 .vidget-about {
@@ -1867,11 +1922,98 @@ main .container{
 .social{
  justify-content:flex-start;
  margin-top: 12px;
+ position: relative;
 }
 
 .social a {
-  margin-right: 8px;
+  margin-right: 46px;
+  font-size: 0px;
 
+}
+
+.Twitter::before {
+  content: "";
+  width:32px;
+  height:32px;
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+
+  border: solid;
+  border-width: 3px;
+  border-radius: 20px;
+  border-color: rgba(255,255,255,0.5);
+  top: -12px;
+
+  position: absolute;
+}
+
+.Instagram::before {
+  content: "";
+  width:32px;
+  height:32px;
+  background-image: url("../img/Instagram.svg");
+  background-repeat: no-repeat;
+
+  border: solid;
+  border-width: 3px;
+  border-radius: 20px;
+  border-color: rgba(255,255,255,0.5);
+  top: -12px;
+
+  position: absolute;
+}
+
+.Facebook::before {
+  content: "";
+  width:32px;
+  height:32px;
+  background-image: url("../img/fb.svg");
+  background-repeat: no-repeat;
+
+  border: solid;
+  border-width: 3px;
+  border-radius: 20px;
+  border-color: rgba(255,255,255,0.5);
+  top: -12px;
+
+  position: absolute;
+}
+
+.Vkontakte::before {
+  content: "";
+  width:32px;
+  height:32px;
+  background-image: url("../img/vk.svg");
+  background-repeat: no-repeat;
+
+  border: solid;
+  border-width: 3px;
+  border-radius: 20px;
+  border-color: rgba(255,255,255,0.5);
+  top: -12px;
+
+  position: absolute;
+}
+
+.Twitter:link,
+.Instagram:link,
+.Facebook:link,
+.Vkontakte:link {
+  opacity: 0.8;
+}
+
+.Twitter:hover,
+.Instagram:hover,
+.Facebook:hover,
+.Vkontakte:hover {
+  opacity: 1.0;
+}
+
+.Twitter:active,
+.Instagram:active,
+.Facebook:active,
+.Vkontakte:active {
+  opacity: 0.9;
 }
 
 .footer-nav {
