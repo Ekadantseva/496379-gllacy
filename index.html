@@ -20,8 +20,10 @@
         <nav class="main-menu">
 
           <div class="menu-catalog">
+            <div class="catalog-link-wrapper">
               <a href="#" class="main-menu-links">Каталог</a>
-              <div class="dropdown-navigation-wrapper">
+             </div>
+             <div class="dropdown-navigation-wrapper">
                 <div class="dropdown-navigation">
                   <ul>
                     <li ><a href="#" class="dropdown-list new"><b>Новинки</b></a></li>
@@ -47,7 +49,8 @@
                 <form class="search">
                   <fieldset class="search-group">
                     <label class="textfield">
-                      <input type="text" name="search-query" placeholder="Что ищем?">
+                      <input type="text" name="search-query">
+                      <label class="float-label" for name="search-query">Что ищем?</label>
                     </label>
                   </fieldset>
                 </form>
@@ -56,17 +59,20 @@
           </div>
 
           <div class="login">
-            <button class="button-login" type="button" name="button-login">Вход</button>
-
+            <div class="button-login-wrapper">
+              <button class="button-login" type="button" name="button-login">Вход</button>
+            </div>
             <div class="login-wrapper">
               <div class="dropdown-login">
                 <form class="login-form">
                   <fieldset class="login-group">
                     <label class="textfield">
-                      <input type="email" name="login-email" placeholder="Электронная почта">
+                      <input type="email" name="login-email">
+                      <label class="float-label" for name="login-email">Электронная почта</label>
                     </label>
                     <label class="textfield">
-                      <input type="password" name="login-password" placeholder="Пароль">
+                      <input type="password" name="login-password">
+                      <label class="float-label" for name="login-password">Пароль</label>
                     </label>
                     <button class="button-small" type="submit" name="Enter">Войти</button>
                     <div class="login-links">
@@ -80,7 +86,9 @@
           </div>
 
           <div class="basket">
-            <button class="button-basket" type="button" name="basket-button">Пусто</button>
+            <div class="button-basket-wrapper">
+             <button class="button-basket" type="button" name="basket-button">Пусто</button>
+            </div>
 
             <div class="basket-container">
               <div class="dropdown-basket">
@@ -255,7 +263,8 @@
               <p class="text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
               <fieldset class="subscription-wrapper">
                 <label class="textfield">
-                  <input type="email" name="email" placeholder="Электронная почта">
+                  <input type="email" name="email">
+                  <label class="float-label" for name="email">Электронная почта</label>
                 </label>
                 <div class="subscription-button">
                   <button class="button-small" type="sumbit" name="send">Отправить</button>
@@ -317,10 +326,12 @@
       <fieldset class="contact-us">
         <h3 class="title">Мы обязательно вам ответим!</h3>
         <label class="textfield">
-          <input type="text" name="user-name" placeholder="Как вас зовут?">
+          <input type="text" name="user-name" >
+          <label class="float-label" for name="user-name">Как вас зовут?</label>
         </label>
         <label class="textfield">
-          <input type="email" name="user-email" placeholder="Ваша почта для ответа?">
+          <input type="email" name="user-email">
+          <label class="float-label" for name="user-email">Ваша почта для ответа</label>
         </label>
         <textarea class="textfield" name="message" >Напишите что-нибудь...</textarea>
         <button class="button-small" type="submit" name="Send">Отправить</button>

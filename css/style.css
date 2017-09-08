@@ -74,6 +74,7 @@ h5 {
   line-height: 1.143;
 }
 
+
 .main-menu-links {
   padding-left:14px;
   padding-right:14px;
@@ -111,6 +112,33 @@ h5 {
   text-decoration:none;
 }
 
+.creamy-catalog {
+  padding-left:14px;
+  padding-right:14px;
+  padding-top:9px;
+  font-size: 16px;
+  font-weight: 700;
+  height: 23px;
+  position: relative;
+  display: inline-block;
+}
+
+.creamy-catalog:link,
+.creamy-catalog:visited,
+.creamy-catalog:active{
+  border-radius: 16px;
+  background-color: #d07058;
+  color: #ffffff;
+  text-decoration:none;
+  box-shadow: none;
+}
+.catalog-link-wrapper {
+  width: 88px;
+  height: 38px;
+  margin-top: 7px;
+}
+
+
 .dropdown-navigation {
   margin: 0px;
   padding-top: 6px;
@@ -134,7 +162,7 @@ h5 {
 
 .dropdown-navigation-wrapper {
   position: absolute;
-  padding-top: 6px;
+  padding-top: 0px;
 }
 
 .new {
@@ -378,7 +406,7 @@ h5 {
 
 
 .login-wrapper {
-  padding-top: 6px;
+  padding-top: 13px;
   position: absolute;
   left: -186px;
   top:32px;
@@ -711,6 +739,12 @@ h5 {
 .search {
   position: relative;
 }
+.button-login-wrapper {
+  height: 38px;
+  width: 100px;
+  margin-top: 7px;
+}
+
 .button-login {
   font: inherit;
   height: 32px;
@@ -771,6 +805,12 @@ h5 {
   background-image: url("../img/login-hover.svg");
 }
 
+.button-basket-catalog-wrapper,
+.button-basket-wrapper{
+  height: 38px;
+  width: 118px;
+  margin-top: 7px;
+}
 
 .button-basket {
   font: inherit;
@@ -1073,7 +1113,54 @@ input[type=password] {
   background-color: rgb(255, 255, 255);
   height: 42px;
   padding-left: 14px;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=password]:hover {
+  border-style: solid;
+  border-width: 2px;
+  height: 40px;
+}
+
+input[type=text]:active,
+input[type=email]:active,
+input[type=password]:active,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus  {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(46, 136, 228, 0.58);
+  height: 40px;
+}
+
+.float-label {
+  color: #999999;
+  left: 23px;
+  bottom: 13px;
+  font-size: 16px;
+  position: absolute;
+}
+
+input[type=email]:active + .float-label,
+input[type=text]:active + .float-label,
+input[type=password]:active + .float-label,
+input[type=email]:focus + .float-label,
+input[type=text]:focus+ .float-label,
+input[type=password]:focus + .float-label{
+  color: #5b9ddf;
+  transform: translateY(-40px);
+  font-size: 11px;
+}
+
+input[type=email]:invalid + .float-label,
+input[type=text]:invalid + .float-label,
+input[type=password]:invalid  + .float-label{
+  font-size: 11px;
+  transform: translateY(-40px);
+  color: #999999;
 }
 
   textarea {
@@ -1109,7 +1196,7 @@ input[type="checkbox"],
  height: 25px;
  background-image: url("../img/radio-off.svg");
 
- opacity: 0.6;
+ opacity: 0.4;
 }
 
 .radio input[type="radio"]:focus + .radio-indicator {
@@ -1119,13 +1206,13 @@ input[type="checkbox"],
 
 .radio input[type="radio"]:checked + .radio-indicator {
  background-image: url("../img/radio-on.svg");
- opacity: 1.0;
+ opacity: 0.8;
 }
 
-
-
-
-
+.radio input[type="radio"]:hover + .radio-indicator {
+ background-image: url("../img/radio-on.svg");
+ opacity: 1.0;
+}
 
 .checkbox input[type="checkbox"] + .checkbox-indicator {
  position: absolute;
@@ -1136,7 +1223,7 @@ input[type="checkbox"],
  height: 24px;
  background-image: url("../img/checkbox-off.svg");
  background-repeat: no-repeat;
- opacity: 0.6;
+ opacity: 0.4;
 }
 
 .checkbox input[type="checkbox"]:focus + .checkbox-indicator {
@@ -1146,6 +1233,10 @@ input[type="checkbox"],
 
 .checkbox input[type="checkbox"]:checked + .checkbox-indicator {
  background-image: url("../img/checkbox-on.svg");
+ opacity: 0.8;
+}
+
+.checkbox input[type="checkbox"]:hover + .checkbox-indicator {
  opacity: 1.0;
 }
 /* Страница каталога */
@@ -1236,6 +1327,7 @@ select {
   background-image: url("..img/select-link.png");
   background-repeat: no-repeat;
   background-position: 88% 0;
+
 
 
   font-size: 16px;
@@ -1494,7 +1586,7 @@ select::before {
   position: absolute;
   top:0px;
   right:-10px;
-  padding-top: 28px;
+  padding-top: 35px;
 
 }
 
@@ -1711,7 +1803,9 @@ main .container{
   margin-left: -10px;
 }
 
-
+.textfield {
+  position: relative;
+}
 
 .map {
   width: 100%;

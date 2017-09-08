@@ -17,7 +17,9 @@
           <nav class="main-menu">
 
             <div class="menu-catalog">
-                <a href="#" class="main-menu-links">Каталог</a>
+              <div class="catalog-link-wrapper">
+                <a href="#" class="main-menu-links creamy-catalog">Каталог</a>
+               </div>
                 <div class="dropdown-navigation-wrapper">
                   <div class="dropdown-navigation">
                     <ul>
@@ -44,7 +46,8 @@
                   <form class="search">
                     <fieldset class="search-group">
                       <label class="textfield">
-                        <input type="text" name="search-query" placeholder="Что ищем?">
+                        <input type="text" name="search-query">
+                        <label class="float-label" for name="search-query">Что ищем?</label>
                       </label>
                     </fieldset>
                   </form>
@@ -53,17 +56,20 @@
             </div>
 
             <div class="login">
-              <button class="button-login" type="button" name="button-login">Вход</button>
-
+              <div class="button-login-wrapper">
+                <button class="button-login" type="button" name="button-login">Вход</button>
+              </div>
               <div class="login-wrapper">
                 <div class="dropdown-login">
                   <form class="login">
                     <fieldset class="login-group">
                       <label class="textfield">
-                        <input type="email" name="login-email" placeholder="Электронная почта">
+                        <input type="email" name="login-email">
+                        <label class="float-label" for name="login-email">Электронная почта</label>
                       </label>
                       <label class="textfield">
-                        <input type="password" name="login-password" placeholder="Пароль">
+                        <input type="password" name="login-password">
+                        <label class="float-label" for name="login-password">Пароль</label>
                       </label>
                       <button class="button-small" type="submit" name="Enter">Войти</button>
                       <div class="login-links">
@@ -77,7 +83,9 @@
             </div>
 
             <div class="basket">
-              <button class="button-basket-catalog" type="button" name="basket-button">2 товара</button>
+              <div class="button-basket-catalog-wrapper">
+               <button class="button-basket-catalog" type="button" name="basket-button">2 товара</button>
+              </div>
               <div class="basket-container">
 
                 <div class="dropdown-basket">
