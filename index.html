@@ -42,7 +42,7 @@
         <div class="user-navigation">
 
           <div class="search">
-            <button class="button-search" type="button" name="search-button" alt="Поиск"></button>
+            <button class="button-search" type="button" name="search-button"></button>
 
             <div class="search-wrapper">
               <div class="dropdown-search">
@@ -50,7 +50,7 @@
                   <fieldset class="search-group">
                     <label class="textfield">
                       <input type="text" name="search-query">
-                      <label class="float-label" for name="search-query">Что ищем?</label>
+                      <label class="float-label" for="search-query">Что ищем?</label>
                     </label>
                   </fieldset>
                 </form>
@@ -68,14 +68,14 @@
                   <fieldset class="login-group">
                     <label class="textfield">
                       <input type="email" name="login-email">
-                      <label class="float-label" for name="login-email">Электронная почта</label>
+                      <label class="float-label" for="login-email">Электронная почта</label>
                     </label>
                     <label class="textfield">
                       <input type="password" name="login-password">
-                      <label class="float-label" for name="login-password">Пароль</label>
+                      <label class="float-label" for="login-password">Пароль</label>
                     </label>
                     <div class="login-info">
-                      <button class="button-small" type="submit" name="Enter">Войти</button>
+                      <button class="button-small" name="Enter">Войти</button>
                       <div class="login-links">
                         <a href="#" class="text-dropdown">Забыли пароль?</a>
                         <a href="#" class="text-dropdown">Новая регистрация</a>
@@ -98,7 +98,7 @@
                   <fieldset class="basket-group">
 
                   <div class="basket-row">
-                      <button type="button" class="basket-delete" alt="Удалить"></button>
+                      <button type="button" class="basket-delete"></button>
                       <img src="img/1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                       <p class="text-dropdown">Пломбир с апельсиновым джемом</p>
                       <div class="basket-wrapper">
@@ -108,7 +108,7 @@
                     </div>
 
                     <div class="basket-row">
-                      <button type="button" class="basket-delete" alt="Удалить"></button>
+                      <button type="button" class="basket-delete"></button>
                       <img src="img/3.jpg" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                       <p class="text-dropdown">Клубничный пломбир с присыпкой из белого шоколада</p>
                       <div class="basket-wrapper">
@@ -119,7 +119,7 @@
 
                     <span class="text-dropdown total"><b>Итого:750 руб.</b></span>
 
-                    <button class="button-small" type="submit"  name="Order">Оформить заказ</button>
+                    <button class="button-small" name="Order">Оформить заказ</button>
                 </fieldset>
               </form>
             </div>
@@ -176,7 +176,7 @@
           <img src="img/1.jpg"  width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <div class="cost-wrapper-index">
             <span class="cost">310</span>
-            <span class="cost">&#8381</span>
+            <span class="cost">&#8381;</span>
             <span class="item-weight">/кг</span>
           </div>
           <h3 class="title-white">
@@ -192,7 +192,7 @@
           <img src="img/2.jpg"  width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           <div class="cost-wrapper-index">
             <span class="cost">380</span>
-            <span class="cost">&#8381</span>
+            <span class="cost">&#8381;</span>
             <span class="item-weight">/кг</span>
           </div>
           <h3 class="title-white">
@@ -208,7 +208,7 @@
           <img src="img/3.jpg"  width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <div class="cost-wrapper-index">
             <span class="cost">355</span>
-            <span class="cost">&#8381</span>
+            <span class="cost">&#8381;</span>
             <span class="item-weight">/кг</span>
           </div>
           <h3 class="title-white">
@@ -224,7 +224,7 @@
           <img src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
           <div class="cost-wrapper-index">
             <span class="cost">415</span>
-            <span class="cost">&#8381</span>
+            <span class="cost">&#8381;</span>
             <span class="item-weight">/кг</span>
           </div>
           <h3 class="title-white">
@@ -266,10 +266,10 @@
               <fieldset class="subscription-wrapper">
                 <label class="textfield">
                   <input type="email" name="email">
-                  <label class="float-label" for name="email">Электронная почта</label>
+                  <label class="float-label" for="email">Электронная почта</label>
                 </label>
                 <div class="subscription-button">
-                  <button class="button-small" type="sumbit" name="send">Отправить</button>
+                  <button class="button-small" name="send">Отправить</button>
                 </div>
               </fieldset>
             </form>
@@ -305,14 +305,14 @@
         <a href="#" class="vkontakte">В контакте</a>
       </div>
       <ul class="footer-nav">
-        <div class="apdx-wrapper">
-          <li class="footer-favorite"> <a href="#" class="footer-link"><b>Для поставщиков</b></a></li>
-          <li><a href="#" class="footer-link">О производстве</a></li>
-        </div>
-        <div class="apdx-wrapper">
-          <li><a href="#" class="footer-link">Наши документы</a></li>
-          <li><a href="#" class="footer-link">Экологические стандарты<a></li>
-        </div>
+        <li class="apdx-wrapper">
+          <div class="footer-favorite"> <a href="#" class="footer-link"><b>Для поставщиков</b></a></div>
+          <div><a href="#" class="footer-link">О производстве</a></div>
+        </li>
+        <li class="apdx-wrapper">
+          <div><a href="#" class="footer-link">Наши документы</a></div>
+          <div><a href="#" class="footer-link">Экологические стандарты</a></div>
+        </li>
       </ul>
       <div class="footer-info">
         <a href="https://htmlacademy.ru/" class="logo-htmlacademy">
@@ -329,14 +329,14 @@
         <h3 class="title">Мы обязательно вам ответим!</h3>
         <label class="textfield">
           <input type="text" name="user-name" >
-          <label class="float-label" for name="user-name">Как вас зовут?</label>
+          <label class="float-label" for="user-name">Как вас зовут?</label>
         </label><br>
         <label class="textfield">
           <input type="email" name="user-email">
-          <label class="float-label" for name="user-email">Ваша почта для ответа</label>
+          <label class="float-label" for="user-email">Ваша почта для ответа</label>
         </label>
         <textarea class="textfield" name="message" >Напишите что-нибудь...</textarea>
-        <button class="button-small" type="submit" name="Send">Отправить</button>
+        <button class="button-small" name="Send">Отправить</button>
       </fieldset>
     </form>
 
