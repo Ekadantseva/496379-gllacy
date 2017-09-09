@@ -1942,7 +1942,7 @@ main .container{
 
 }
 
-.Twitter::before {
+.twitter::before {
   content: "";
   width:32px;
   height:32px;
@@ -1974,7 +1974,7 @@ main .container{
   position: absolute;
 }
 
-.Facebook::before {
+.facebook::before {
   content: "";
   width:32px;
   height:32px;
@@ -1990,7 +1990,7 @@ main .container{
   position: absolute;
 }
 
-.Vkontakte::before {
+.vkontakte::before {
   content: "";
   width:32px;
   height:32px;
@@ -2006,24 +2006,24 @@ main .container{
   position: absolute;
 }
 
-.Twitter:link,
-.Instagram:link,
-.Facebook:link,
-.Vkontakte:link {
+.twitter:link,
+.instagram:link,
+.facebook:link,
+.vkontakte:link {
   opacity: 0.8;
 }
 
-.Twitter:hover,
-.Instagram:hover,
-.Facebook:hover,
-.Vkontakte:hover {
+.twitter:hover,
+.instagram:hover,
+.facebook:hover,
+.vkontakte:hover {
   opacity: 1.0;
 }
 
-.Twitter:active,
-.Instagram:active,
-.Facebook:active,
-.Vkontakte:active {
+.twitter:active,
+.instagram:active,
+.facebook:active,
+.vkontakte:active {
   opacity: 0.9;
 }
 
