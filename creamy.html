@@ -11,94 +11,117 @@
     <header>
       <div class="container">
         <div class="main-header-wrapper">
-          <span class="logo">
+          <a href="index.html" class="logo">
             <img src="img/logo.svg" width="154" height="64" alt="Gllacy Shop">
-          </span>
+          </a>
           <nav class="main-menu">
 
-             <div class="button-catalog">
-               <a href="#" class="main-menu-links">Каталог</a>
-               <div class="dropdown-navigation">
-                 <a href="#" class="dropdown-list"><b>Новинки</b></a>
-                  <ul>
-                    <li><a href="creamy.html" class="dropdown-list">Сливочное</a></li>
-                    <li><a href="#" class="dropdown-list">Щербеты</a></li>
-                    <li><a href="#" class="dropdown-list">Фруктовый лед</a></li>
-                    <li><a href="#" class="dropdown-list">Мелорин</a></li>
-                  </ul>
-                </div>
+            <div class="menu-catalog">
+              <div class="catalog-link-wrapper">
+                <a href="#" class="main-menu-links creamy-catalog">Каталог</a>
+               </div>
+                <div class="dropdown-navigation-wrapper">
+                  <div class="dropdown-navigation">
+                    <ul>
+                      <li ><a href="#" class="dropdown-list new"><b>Новинки</b></a></li>
+                      <li ><a href="creamy.html" class="dropdown-list">Сливочное</a></li>
+                      <li><a href="#" class="dropdown-list">Щербеты</a></li>
+                      <li><a href="#" class="dropdown-list">Фруктовый лед</a></li>
+                      <li><a href="#" class="dropdown-list">Мелорин</a></li>
+                    </ul>
+                   </div>
+                 </div>
               </div>
-
               <a href="#" class="main-menu-links">Доставка и оплата</a>
               <a href="#" class="main-menu-links">О Компании</a>
           </nav>
+
+
           <div class="user-navigation">
 
             <div class="search">
               <button class="button-search" type="button" name="search-button" alt="Поиск"></button>
-              <div class="dropdown-search">
-                <form class="search">
-                  <fieldset class="search-group">
-                    <label class="textfield">
-                      <input type="text" name="search-query" placeholder="Что ищем?">
-                    </label>
-                  </fieldset>
-                </form>
+              <div class="search-wrapper">
+                <div class="dropdown-search">
+                  <form class="search">
+                    <fieldset class="search-group">
+                      <label class="textfield">
+                        <input type="text" name="search-query">
+                        <label class="float-label" for name="search-query">Что ищем?</label>
+                      </label>
+                    </fieldset>
+                  </form>
+                </div>
               </div>
             </div>
 
             <div class="login">
-              <button class="button-login" type="button" name="button-login">Вход</button>
-              <div class="dropdown-login">
-                <form class="login">
-                  <fieldset class="login-group">
-                    <label class="textfield">
-                      <input type="email" name="login-email" placeholder="Электронная почта">
-                    </label>
-                    <label class="textfield">
-                      <input type="password" name="login-password" placeholder="Пароль">
-                    </label>
-                    <button class="button-small" type="submit" name="Enter">Войти</button>
-                    <div class="login-links">
-                      <a href="#" class="text-dropdown">Забыли пароль?</a>
-                      <a href="#" class="text-dropdown">Новая регистрация</a>
-                    </div>
-                  </fieldset>
-                </form>
+              <div class="button-login-wrapper">
+                <button class="button-login" type="button" name="button-login">Вход</button>
+              </div>
+              <div class="login-wrapper">
+                <div class="dropdown-login">
+                  <form class="login-form">
+                    <fieldset class="login-group">
+                      <label class="textfield">
+                        <input type="email" name="login-email">
+                        <label class="float-label" for name="login-email">Электронная почта</label>
+                      </label>
+                      <label class="textfield">
+                        <input type="password" name="login-password">
+                        <label class="float-label" for name="login-password">Пароль</label>
+                      </label>
+                      <div class="login-info">
+                        <button class="button-small" type="submit" name="Enter">Войти</button>
+                        <div class="login-links">
+                          <a href="#" class="text-dropdown">Забыли пароль?</a>
+                          <a href="#" class="text-dropdown">Новая регистрация</a>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
               </div>
             </div>
 
             <div class="basket">
-              <button class="button-basket" type="button" name="basket-button">Пусто</button>
-              <div class="dropdown-basket">
-                <form class="basket">
-                  <fieldset class="basket-group">
+              <div class="button-basket-catalog-wrapper">
+               <button class="button-basket-catalog" type="button" name="basket-button">2 товара</button>
+              </div>
+              <div class="basket-container">
+
+                <div class="dropdown-basket">
+                  <form class="basket">
+                    <fieldset class="basket-group">
+
                     <div class="basket-row">
-                      <button type="button" class="basket-delete" alt="Удалить"></button>
-                      <img src="img/1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                      <p class="text-dropdown">Пломбир с апельсиновым джемом</p>
-                      <div class=basket-wrapper>
-                       <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">200 руб.</span>
-                     </div>
-                      <span class="text-dropdown">300 руб.</span>
-                    </div>
-                    <div class="basket-row">
-                      <button type="button" class="basket-delete" alt="Удалить"></button>
-                      <img src="img/3.jpg" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                      <p class="text-dropdown">Клубничный пломбир с присыпкой из белого шоколада</p>
-                      <div class=basket-wrapper>
-                       <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">300 руб.</span>
-                     </div>
-                      <span class="text-dropdown">450 руб.</span>
-                    </div>
-                    <span class="text-dropdown"><b>Итого:750 руб.</b></span>
-                    <button class="button-small" type="submit"  name="Order">Оформить заказ</button>
+                        <button type="button" class="basket-delete" alt="Удалить"></button>
+                        <img src="img/1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                        <p class="text-dropdown">Пломбир с апельсиновым джемом</p>
+                        <div class="basket-wrapper">
+                         <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">200 руб.</span>
+                        </div>
+                        <span class="text-dropdown">300 руб.</span>
+                      </div>
+
+                      <div class="basket-row">
+                        <button type="button" class="basket-delete" alt="Удалить"></button>
+                        <img src="img/3.jpg" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                        <p class="text-dropdown">Клубничный пломбир с присыпкой из белого шоколада</p>
+                        <div class="basket-wrapper">
+                         <span class="text-dropdown">1,5 кг х</span> <span class="text-dropdown-ref">300 руб.</span>
+                        </div>
+                        <span class="text-dropdown">450 руб.</span>
+                      </div>
+
+                      <span class="text-dropdown total"><b>Итого:750 руб.</b></span>
+
+                      <button class="button-small" type="submit"  name="Order">Оформить заказ</button>
                   </fieldset>
                 </form>
               </div>
             </div>
-              </div>
-
+          </div>
   <!--Контакты-->
         </div>
 
@@ -123,72 +146,87 @@
 <!--filters-->
       <div class="filters-wrapper">
       <form class="filters">
-        <div class="select-wrapper">
-          <fieldset class="select">
+        <div class="filter-row">
+          <div class="select-wrapper">
             <legend>Сортировка:</legend>
-            <select name="sort">
-              <option value="by-popular" selected>по популярности</option>
-              <option value="by-cheap">сначала недорогие</option>
-              <option value="by-expensive">сначала дорогие</option>
-              <option value="by-fat">по жирности</option>
-            </select>
-          </fieldset>
-        </div>
-        <div class="range-wrapper">
-          <fieldset class="range-group">
-            <legend>Цена: 100 руб. – 500 руб.</legend>
-              <div class="range-conteiner">
-                <label class="range">
-                  <button type="submit" name="range-minimum" class="range-element"></button>
-                  <button type="submit" name="range-maximum" class="range-element"></button>
-                  <div class="range-line"></div>
-                </label>
-              </div>
-          </fieldset>
-        </div>
-        <div class="radio-wrapper">
-          <fieldset class="radio-group">
-            <legend>Жирность</legend>
-              <div class="radio-conteiner">
-                <label class="radio">
-                  <input id="radio-0" type="radio" name="fat" value="0">0%
-                </label>
-                <label class="radio">
-                  <input id="radio-to-10" type="radio" name="fat" value="to-10" checked>до 10%
-                </label>
-                <label class="radio">
-                  <input id="radio-to-30" type="radio" name="fat" value="to-30">до 30%
-                </label>
-                <label class="radio">
-                  <input id="radio-above-30" type="radio" name="fat" value="above-30">выше 30%
-                </label>
-              </div>
-          </fieldset>
-        </div>
-        <div class="checkbox-wrapper">
-          <fieldset class="checkbox-group">
-            <legend>Наполнители</legend>
-              <div class="checkbox-conteiner">
-                <label class="checkbox">
-                  <input id="checkbox-chokolate" type="checkbox" name="adds" value="chokolate" checked>шоколадные
-                </label>
-                <label class="checkbox">
-                   <input id="checkbox-sugar" type="checkbox" name="adds" value="sugar">сахарные присыпки
-                </label>
-                <label class="checkbox">
-                  <input id="checkbox-fruits" type="checkbox" name="adds" value="fruits">фрукты
-                </label>
-                <label class="checkbox">
-                  <input id="checkbox-syrup" type="checkbox" name="adds" value="syrup">сиропы
-                </label>
-                <label class="checkbox">
-                  <input id="checkbox-jam" type="checkbox" name="adds" value="jam">джемы
-                </label>
-              </div>
+              <fieldset class="select">
+                <div class="sort-wrapper">
+                  <select class="sort" name="sort">
+                    <option value="by-popular" selected>по популярности</option>
+                    <option value="by-cheap">сначала недорогие</option>
+                    <option value="by-expensive">сначала дорогие</option>
+                    <option value="by-fat">по жирности</option>
+                  </select>
+                </div>
             </fieldset>
           </div>
-        <div class="button-filter-wrapper">
-          <button type="submit" name="Apply" class="button-filter">Применить</button>
+          <div class="range-wrapper">
+            <legend>Цена: 100 руб. – 500 руб.</legend>
+              <fieldset class="range-group">
+                <div class="range-conteiner">
+                  <label class="range">
+                    <div class="range-line"></div>
+                    <div class="range-element left"></div>
+                    <div class="range-element right"></div>
+                  </label>
+                </div>
+            </fieldset>
+          </div>
+          <div class="radio-wrapper">
+            <legend>Жирность</legend>
+              <fieldset class="radio-group">
+                <div class="radio-conteiner">
+                  <label class="radio">
+                    <input id="radio-0" type="radio" name="fat" value="0">
+                    <span class="radio-indicator"></span>0%
+                  </label>
+                  <label class="radio">
+                    <input id="radio-to-10" type="radio" name="fat" value="to-10" checked>
+                    <span class="radio-indicator"></span>до 10%
+                  </label>
+                  <label class="radio">
+                    <input id="radio-to-30" type="radio" name="fat" value="to-30">
+                    <span class="radio-indicator"></span>до 30%
+                  </label>
+                  <label class="radio">
+                    <input id="radio-above-30" type="radio" name="fat" value="above-30">
+                    <span class="radio-indicator"></span>выше 30%
+                  </label>
+                </div>
+            </fieldset>
+          </div>
+        </div>
+        <div class="filter-row">
+          <div class="checkbox-wrapper">
+            <legend>Наполнители</legend>
+              <fieldset class="checkbox-group">
+                <div class="checkbox-conteiner">
+                  <label class="checkbox">
+                    <input id="checkbox-chokolate" type="checkbox" name="adds" value="chokolate" checked>
+                    <span class="checkbox-indicator"></span>шоколадные
+                  </label>
+                  <label class="checkbox">
+                     <input id="checkbox-sugar" type="checkbox" name="adds" value="sugar">
+                     <span class="checkbox-indicator"></span>сахарные присыпки
+                  </label>
+                  <label class="checkbox">
+                    <input id="checkbox-fruits" type="checkbox" name="adds" value="fruits">
+                    <span class="checkbox-indicator"></span>фрукты
+                  </label>
+                  <label class="checkbox">
+                    <input id="checkbox-syrup" type="checkbox" name="adds" value="syrup">
+                    <span class="checkbox-indicator"></span>сиропы
+                  </label>
+                  <label class="checkbox">
+                    <input id="checkbox-jam" type="checkbox" name="adds" value="jam">
+                    <span class="checkbox-indicator"></span>джемы
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          <div class="button-filter-wrapper">
+            <button type="submit" name="Apply" class="button-filter">Применить</button>
+          </div>
         </div>
       </form>
     </div>
@@ -198,6 +236,9 @@
 <!--catalog-->
       <section class="catalog">
         <article class="catalog-item">
+          <div class="catalog-item-info">
+            <button type="button" class="button-small" name="fast-preview">Быстрый просмотр</button>
+          </div>
           <img src="img/1.jpg"  width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <div class="cost-wrapper">
             <span class="cost">310</span>
@@ -210,6 +251,9 @@
         </article>
 
         <article class="catalog-item">
+          <div class="catalog-item-info">
+            <button type="button" class="button-small" name="fast-preview">Быстрый просмотр</button>
+          </div>
           <img src="img/2.jpg"  width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
           <div class="cost-wrapper">
             <span class="cost">380</span>
@@ -222,6 +266,9 @@
         </article>
 
         <article class="catalog-item">
+          <div class="catalog-item-info">
+            <button type="button" class="button-small" name="fast-preview">Быстрый просмотр</button>
+          </div>
           <img src="img/3.jpg"  width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <div class="cost-wrapper">
             <span class="cost">355</span>
@@ -234,6 +281,9 @@
         </article>
 
         <article class="catalog-item">
+          <div class="catalog-item-info">
+            <button type="button" class="button-small" name="fast-preview">Быстрый просмотр</button>
+          </div>
           <img src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
           <div class="cost-wrapper">
             <span class="cost">415</span>
@@ -246,6 +296,9 @@
         </article>
 
         <article class="catalog-item">
+          <div class="catalog-item-info">
+            <button type="button" class="button-small" name="fast-preview">Быстрый просмотр</button>
+          </div>
           <img src="img/5.jpg"  width="267" height="267" alt="Сливочное с брусничным джемом">
           <div class="cost-wrapper">
             <span class="cost">325</span>
@@ -258,6 +311,9 @@
         </article>
 
         <article class="catalog-item">
+          <div class="catalog-item-info">
+            <button type="button" class="button-small" name="fast-preview">Быстрый просмотр</button>
+          </div>
           <img src="img/6.jpg"  width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники ">
           <div class="cost-wrapper">
             <span class="cost">410</span>
@@ -270,6 +326,9 @@
         </article>
 
         <article class="catalog-item">
+          <div class="catalog-item-info">
+            <button type="button" class="button-small" name="fast-preview">Быстрый просмотр</button>
+          </div>
           <img src="img/7.jpg"  width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
           <div class="cost-wrapper">
             <span class="cost">375</span>
@@ -282,6 +341,9 @@
         </article>
 
         <article class="catalog-item">
+          <div class="catalog-item-info">
+            <button type="button" class="button-small" name="fast-preview">Быстрый просмотр</button>
+          </div>
           <img src="img/8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
           <div class="cost-wrapper">
             <span class="cost">320</span>
@@ -294,6 +356,9 @@
         </article>
 
         <article class="catalog-item">
+          <div class="catalog-item-info">
+            <button type="button" class="button-small" name="fast-preview">Быстрый просмотр</button>
+          </div>
           <img src="img/9.jpg"  width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
           <div class="cost-wrapper">
             <span class="cost">440</span>
@@ -306,6 +371,9 @@
         </article>
 
         <article class="catalog-item">
+          <div class="catalog-item-info">
+            <button type="button" class="button-small" name="fast-preview">Быстрый просмотр</button>
+          </div>
           <img src="img/10.jpg"  width="267" height="267" alt="Сливочноe с ментоловым сиропом">
           <div class="cost-wrapper">
             <span class="cost">435</span>
@@ -318,6 +386,9 @@
         </article>
 
         <article class="catalog-item">
+          <div class="catalog-item-info">
+            <button type="button" class="button-small" name="fast-preview">Быстрый просмотр</button>
+          </div>
           <img src="img/11.jpg"  width="267" height="267" alt="Сливочное с кусочками черного шоколада">
           <div class="cost-wrapper">
             <span class="cost">355</span>
@@ -330,6 +401,9 @@
         </article>
 
         <article class="catalog-item">
+          <div class="catalog-item-info">
+            <button type="button" class="button-small" name="fast-preview">Быстрый просмотр</button>
+          </div>
           <img src="img/12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
           <div class="cost-wrapper">
             <span class="cost">420</span>
@@ -360,10 +434,10 @@
 <div class="footer-container-catalog">
  <footer class="main-footer">
    <div class="social">
-     <a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Twitter"></a>
-     <a href="#"><img src="img/instagram.svg" width="32" height="32" alt="Instagram"></a>
-     <a href="#"><img src="img/fb.svg" width="32" height="32" alt="Facebook"></a>
-     <a href="#"><img src="img/vk.svg" width="32" height="32" alt="В контакте"></a>
+     <a href="#" class="twitter">Twitter</a>
+     <a href="#" class="instagram">Instagram</a>
+     <a href="#" class="facebook">Facebook</a>
+     <a href="#" class="vkontakte">В контакте</a>
    </div>
    <ul class="footer-nav">
      <div class="apdx-wrapper">
