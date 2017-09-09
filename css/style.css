@@ -651,7 +651,6 @@ h5 {
   left:38%;
   z-index: 500;
 
-  display: none;
 }
 
 .popup-close {
@@ -1425,6 +1424,8 @@ select {
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
 
   font-size: 16px;
   line-height: 18px;
