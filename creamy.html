@@ -81,7 +81,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="basket">
               <div class="button-basket-catalog-wrapper">
                <button class="button-basket-catalog" type="button" name="basket-button">2 товара</button>
@@ -145,19 +145,21 @@
       <div class="filters-wrapper">
       <form class="filters">
         <div class="select-wrapper">
-          <fieldset class="select">
-            <legend>Сортировка:</legend>
-              <select class="sort" name="sort">
-                <option value="by-popular" selected>по популярности</option>
-                <option value="by-cheap">сначала недорогие</option>
-                <option value="by-expensive">сначала дорогие</option>
-                <option value="by-fat">по жирности</option>
-              </select>
+          <legend>Сортировка:</legend>
+            <fieldset class="select">
+              <div class="sort-wrapper">
+                <select class="sort" name="sort">
+                  <option value="by-popular" selected>по популярности</option>
+                  <option value="by-cheap">сначала недорогие</option>
+                  <option value="by-expensive">сначала дорогие</option>
+                  <option value="by-fat">по жирности</option>
+                </select>
+              </div>
           </fieldset>
         </div>
         <div class="range-wrapper">
-          <fieldset class="range-group">
-            <legend>Цена: 100 руб. – 500 руб.</legend>
+          <legend>Цена: 100 руб. – 500 руб.</legend>
+            <fieldset class="range-group">
               <div class="range-conteiner">
                 <label class="range">
                   <div class="range-line"></div>
@@ -168,8 +170,8 @@
           </fieldset>
         </div>
         <div class="radio-wrapper">
-          <fieldset class="radio-group">
-            <legend>Жирность</legend>
+          <legend>Жирность</legend>
+            <fieldset class="radio-group">
               <div class="radio-conteiner">
                 <label class="radio">
                   <input id="radio-0" type="radio" name="fat" value="0">
@@ -191,8 +193,8 @@
           </fieldset>
         </div>
         <div class="checkbox-wrapper">
-          <fieldset class="checkbox-group">
-            <legend>Наполнители</legend>
+          <legend>Наполнители</legend>
+            <fieldset class="checkbox-group">
               <div class="checkbox-conteiner">
                 <label class="checkbox">
                   <input id="checkbox-chokolate" type="checkbox" name="adds" value="chokolate" checked>
