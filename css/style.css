@@ -75,6 +75,27 @@ h5 {
   line-height: 1.143;
 }
 
+.main-menu-links span {
+ border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+ padding-bottom: -1px;
+ color: #ffffff;
+}
+
+.main-menu-links span:link,
+.main-menu-links span:visited {
+ color: #ffffff;
+}
+
+.main-menu-links:hover span {
+  border-bottom:none;
+  color: #333333;
+
+}
+
+.main-menu-links:active span {
+  border-bottom:none;
+  color: #333333;
+}
 
 .main-menu-links {
   padding-left:14px;
@@ -91,25 +112,17 @@ h5 {
 .main-menu-links:visited {
   padding-left:14px;
   padding-right:14px;
-  color: #ffffff;
-  text-decoration:underline;
-  text-underline-position: under;
-  text-decoration-color: rgba(255, 255, 255, 0.3);
 }
 
 .main-menu-links:hover {
   border-radius: 16px;
   background-color: #f7f6f3;
-  color: #333333;
-  text-decoration:none;
 }
 
 .main-menu-links:active {
   border-radius: 16px;
   background-color: #f7f6f3;
   box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 1);
-  color: #333333;
-  text-decoration:none;
 }
 
 .creamy-catalog {
@@ -510,8 +523,61 @@ h5 {
   width: 1200px;
   left: 0px;
   height: 916px;
-  background: url("../img/bg-slider.jpg") no-repeat #849d8f;
   text-align: center;
+  position: relative;
+}
+
+.dots-navigation {
+  text-align: left;
+  position: absolute;
+  z-index: 50;
+  top:565px;
+  left:27px;
+}
+
+.dots-navigation button {
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 12px;
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.dots-navigation button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #ffffff;
+}
+
+.dots-navigation button:active {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.slide-1, .slide-2, .slide-3 {
+  padding: 0;
+  margin: 0 auto;
+  width: 1200px;
+  left: 0px;
+  height: 916px;
+  text-align: center;
+}
+
+.slide-1 {
+  background: url("../img/bg-slider-1.jpg") no-repeat #849d8f;
+}
+
+.slide-2 {
+  background: url("../img/bg-slider-2.jpg") no-repeat #8996a6;
+  display: none;
+}
+
+.slide-3 {
+  background: url("../img/bg-slider-3.jpg") no-repeat #9d8b84;
+  display: none;
 }
 
 .title-slide {
@@ -528,17 +594,15 @@ h5 {
 }
 
 .vidget-raspberry .button-small{
-  position: absolute;
-  bottom: 22px;
-  right: 20px;
   cursor: pointer;
+  margin-top: 25px;
+  float: right;
 }
 
 .vidget-chocolate .button-small{
-  position: absolute;
-  bottom: 22px;
-  right: 20px;
   cursor: pointer;
+  margin-top: 25px;
+  float: right;
 }
 
 .vidget-raspberry {
@@ -547,12 +611,12 @@ h5 {
   padding-top: 17px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 23px;
   border-radius: 13px;
   background: url("../img/bg-rasberry.jpg") no-repeat #872944;
   position: relative;
-
+  background-size: cover;
 }
-
 
 .vidget-chocolate {
   width: 520px;
@@ -563,7 +627,7 @@ h5 {
   border-radius: 13px;
   background: url("../img/bg-chokolate.jpg") no-repeat #53302a;
   position: relative;
-
+  background-size: cover;
 }
 
 .vidget-about {
@@ -668,6 +732,8 @@ h5 {
   top: 338px;
   left:38%;
   z-index: 500;
+
+  display: none;
 
 }
 
@@ -923,7 +989,10 @@ h5 {
   cursor: pointer;
 }
 
-
+header{
+  position: relative;
+  z-index: 50;
+}
 
 .header-button:link,
 .header-button:visited {
@@ -1089,35 +1158,6 @@ footer {
 }
 
 /* Поля и другие UI */
-.dots-navigation
-{
-  text-align: left;
-  margin-left: 27px;
-  position: relative;
-  top:-45px;
-}
-
-.dots-navigation button {
-  width: 20px;
-  height: 20px;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 12px;
-  border-color: #ffffff;
-  background-color: rgba(255, 255, 255, 0);
-  margin-right: 7px;
-}
-
-.dots-navigation button:hover {
-  background-color: rgba(255, 255, 255, 0.4);
-  border-color: #ffffff;
-}
-
-.dots-navigation button:active {
-  background-color: #ffffff;
-  border-color: #ffffff;
-}
-
 input[type=text],
 input[type=email],
 input[type=password] {
@@ -1331,8 +1371,9 @@ input[type="radio"]{
   font-weight: 400;
   line-height: 16px;
   color: #ffffff;
-  position: absolute;
-  top:-20px;
+  margin-top: -15px;
+  /*position: absolute;
+  top:-20px;*/
 }
 
 .breadcrumbs a{
@@ -1360,8 +1401,8 @@ input[type="radio"]{
 }
 
 .breadcrumbs-arrow {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .catalog-title {
@@ -1670,6 +1711,7 @@ select option {
 
 .user-navigation {
   width:267px;
+  margin-top: 2px;
   display:flex;
   align-items:center;
   justify-content: flex-end;
@@ -1723,7 +1765,7 @@ select option {
 
 .header-contacts {
   margin-top: 0px;
-  width:1146px;
+  margin-left: 979px;
   height: 40px;
 }
 
