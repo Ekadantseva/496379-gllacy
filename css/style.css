@@ -60,7 +60,7 @@ h5 {
   color:#323232;
 }
 
-.text-dropdown{
+.text-dropdown {
   font-size: 13px;
   font-weight: 400;
   line-height: 1.846;
@@ -138,7 +138,7 @@ h5 {
 
 .creamy-catalog:link,
 .creamy-catalog:visited,
-.creamy-catalog:active{
+.creamy-catalog:active {
   border-radius: 16px;
   background-color: #d07058;
   color: #ffffff;
@@ -164,7 +164,7 @@ h5 {
   position: absolute;
   display: none;
 }
-.menu-catalog{
+.menu-catalog {
   position: relative;
   z-index: 20;
 }
@@ -191,7 +191,7 @@ h5 {
   left: 6px;
   position: absolute;
 }
-.dropdown-navigation ul{
+.dropdown-navigation ul {
   list-style: none;
   margin:0px;
   padding:0px;
@@ -208,8 +208,7 @@ h5 {
 }
 
 .dropdown-navigation .dropdown-list:link,
- .dropdown-navigation .dropdown-list:visited
- {
+.dropdown-navigation .dropdown-list:visited {
   line-height: 30px;
   color: #323232;
 }
@@ -230,8 +229,10 @@ h5 {
   padding-top: 5px;
 }
 
-.catalog-item .title-white{
-  margin-top: -40px;
+.catalog-item .title-white {
+  margin-top: -39px;
+  width:256px;
+  margin-left: 6px;
 }
 
 .catalog-item a {
@@ -311,7 +312,7 @@ h5 {
 }
 
 
-.vidget h2{
+.vidget h2 {
   margin:0;
 }
 .vidget .title-white {
@@ -408,7 +409,7 @@ h5 {
   display: none;
 }
 
-.seacrh:hover .dropdown-search{
+.seacrh:hover .dropdown-search {
   display: block;
 }
 
@@ -423,12 +424,11 @@ h5 {
 
 
 .login-wrapper {
-  padding-top: 13px;
+  padding-top: 8px;
   position: absolute;
-  left: -186px;
-  top:32px;
+  left: -200px;
+  top:31px;
   display: none;
-
 }
 
 .dropdown-login {
@@ -446,7 +446,7 @@ h5 {
   z-index: 50;
 }
 
-.login:hover .login-wrapper{
+.login:hover .login-wrapper {
   display: block;
 }
 .login {
@@ -463,7 +463,6 @@ h5 {
 
 .login-info {
     margin-top: 20px;
-
 }
 
 .login-links {
@@ -475,7 +474,7 @@ h5 {
 
 
 
-.login-info .button-small{
+.login-info .button-small {
   width: 101px;
   margin-left: 0;
 }
@@ -557,7 +556,9 @@ h5 {
   border-color: #ffffff;
 }
 
-.slide-1, .slide-2, .slide-3 {
+.slide-1,
+.slide-2,
+.slide-3 {
   padding: 0;
   margin: 0 auto;
   width: 1200px;
@@ -593,13 +594,13 @@ h5 {
   width: 700px;
 }
 
-.vidget-raspberry .button-small{
+.vidget-raspberry .button-small {
   cursor: pointer;
   margin-top: 25px;
   float: right;
 }
 
-.vidget-chocolate .button-small{
+.vidget-chocolate .button-small {
   cursor: pointer;
   margin-top: 25px;
   float: right;
@@ -640,36 +641,36 @@ h5 {
   background: url("../img/wafel-bg.png") #e9dec6;
 }
 
-.vidget-about .title{
+.vidget-about .title {
   font-size: 24px;
   line-height: 1.25;
   margin:0px;
   padding:0px;
 }
 
-.vidget-about ul{
+.vidget-about ul {
   margin: 0px;
   padding: 0px;
 }
 
-.vidget-about li{
+.vidget-about li {
   font-size: 16px;
   line-height: 1.375;
   margin-bottom: 14px;
   padding-top: 17px;
 }
 
-
-.vidget-blog .text{
+.vidget-blog .text {
   font-size: 16px;
   line-height: 1.375px;
   margin-top: 15px;
 }
 
-.vidget-blog-title{
+.vidget-blog-title {
   width:310px;
   margin-top: 5px;
 }
+
 .vidget-blog {
   width: 540px;
   height: 195px;
@@ -683,7 +684,7 @@ h5 {
   background-position: right bottom;
 }
 
-.vidget-subscription-border{
+.vidget-subscription-border {
   margin-right: 0px;
   width: 550px;
   height: 210px;
@@ -700,7 +701,6 @@ h5 {
   cursor: pointer;
 }
 
-
 .vidget-subscription {
   position: relative;
   width: 510px;
@@ -709,6 +709,7 @@ h5 {
   background: #f8f7f4;
   border-radius: 10px
 }
+
 .vidget-subscription input[type=email]{
   border-radius: 4px;
   height: 42px;
@@ -716,7 +717,6 @@ h5 {
   margin-top: 19px;
   margin-left: 10px;
 }
-
 
 .popup {
   width: 393px;
@@ -730,9 +730,11 @@ h5 {
 
   position: fixed;
   top: 338px;
-  left:38%;
-  z-index: 500;
+  left:50%;
+  margin-left: -239px;
+  z-index: 10;
 
+  display: none;
 }
 
 .popup-close {
@@ -772,10 +774,10 @@ h5 {
 
 .button-search {
   font: inherit;
-  height: 32px;
-  width: 32px;
+  display: inline-block;
+  height: 20px;
+  width: 22px;
   background-size: 17px 17px;
-  background-position: center;
   border: 0px;
   border-radius: 16px;
   padding-top:6px;
@@ -783,9 +785,6 @@ h5 {
   padding-left: 10px;
   margin-right: 10px;
   background-color: rgba(248, 247, 244, 0.2);
-  font-weight: 700;
-  font-size: 14px;
-  color: #ffffff;
   background-image: url("../img/search-link.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -826,22 +825,22 @@ h5 {
 .button-login-wrapper {
   height: 38px;
   width: 100px;
-  margin-top: 7px;
+  margin-top: 0px;
 }
 
 .button-login {
   font: inherit;
-  height: 32px;
+  display: inline-block;
+  height: 17px;
   border: 0px;
   border-radius: 16px;
-  padding-top:6px;
-  padding-bottom:6px;
-  padding-right: 14px;
+  padding-top:8px;
+  padding-bottom:7px;
+  padding-right: 15px;
   padding-left: 45px;
   margin-right: 10px;
   background-color: rgba(248, 247, 244, 0.2);
-  font-weight: 700;
-  text-align: center;
+  font-weight: 500;
   font-size: 14px;
   color: #ffffff;
   position: relative;
@@ -891,25 +890,25 @@ h5 {
 }
 
 .button-basket-catalog-wrapper,
-.button-basket-wrapper{
+.button-basket-wrapper {
   height: 38px;
   width: 118px;
-  margin-top: 7px;
+  margin-top: 12px;
 }
 
 .button-basket {
   font: inherit;
-  height: 32px;
+  height: 17px;
   width: 116px;
   border: 0px;
   border-radius: 16px;
-  padding-top:6px;
-  padding-bottom:6px;
-  padding-right: 10px;
-  padding-left: 44px;
+  padding-top:8px;
+  padding-bottom:7px;
+  padding-right: 33px;
+  padding-left: 46px;
   margin-right: 0px;
   background-color: rgba(248, 247, 244, 0.2);
-  font-weight: 700;
+  font-weight: 500;
   text-align: left;
   font-size: 14px;
   color: #ffffff;
@@ -943,7 +942,7 @@ h5 {
   width: 21px;
   height: 20px;
   position: absolute;
-  left: 15px;
+  left: 17px;
   top:6px;
   background-image: url("../img/basket.svg");
 }
@@ -987,7 +986,7 @@ h5 {
   cursor: pointer;
 }
 
-header{
+header {
   position: relative;
   z-index: 50;
 }
@@ -1014,7 +1013,7 @@ header{
   box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 1);
 }
 
-.slide .button-big{
+.slide .button-big {
   text-align: center;
   margin-left: 0px;
 }
@@ -1089,12 +1088,11 @@ footer {
    position: absolute;
    margin-top: 62px;
    right:0px;
-
  }
 
 .vidget-contacts .title-small {
   margin: 0px;
-  width:175px;
+  width:250px;
   font-size: 14px;
   line-height: 1.428;
   text-align: left;
@@ -1120,17 +1118,16 @@ footer {
   margin-top: 5px;
 }
 
-
 .vidget-contacts .button-small {
   margin-top: 25px;
   width:100%;
 }
 
-
 .footer-nav {
   margin:0px;
   padding: 0px;
 }
+
 .footer-link {
   font-size: 13px;
   font-weight: 400;
@@ -1180,7 +1177,7 @@ input[type=password]:hover {
 
 input[type=text]:active,
 input[type=email]:active,
-input[type=password]:active{
+input[type=password]:active {
   border-style: solid;
   border-width: 2px;
   border-color: rgba(46, 136, 228, 0.58);
@@ -1197,6 +1194,7 @@ input[type=password]:focus {
   outline: none;
 }
 
+
 .float-label {
   color: #999999;
   left: 23px;
@@ -1212,7 +1210,7 @@ input[type=text]:active + .float-label,
 input[type=password]:active + .float-label,
 input[type=email]:focus + .float-label,
 input[type=text]:focus+ .float-label,
-input[type=password]:focus + .float-label{
+input[type=password]:focus + .float-label {
   color: #5b9ddf;
   transform: translateY(-37px);
   font-size: 11px;
@@ -1220,7 +1218,7 @@ input[type=password]:focus + .float-label{
 
 input[type=email]:invalid + .float-label,
 input[type=text]:invalid + .float-label,
-input[type=password]:invalid  + .float-label{
+input[type=password]:invalid  + .float-label {
   font-size: 11px;
   transform: translateY(-37px);
   color: #999999;
@@ -1303,7 +1301,13 @@ input[type="radio"]{
     display:none;
   }
 
-.radio,
+.radio {
+  position: relative;
+  padding-left: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
 .checkbox {
   position: relative;
   padding-left: 31px;
@@ -1311,13 +1315,14 @@ input[type="radio"]{
   cursor: pointer;
 }
 
+
 .radio input[type="radio"] + .radio-indicator {
  position: absolute;
- top: -1px;
+ top: 0px;
  left: 0;
 
- width: 25px;
- height: 25px;
+ width: 22px;
+ height: 22px;
  background-image: url("../img/radio-off.svg");
 
  opacity: 0.4;
@@ -1340,11 +1345,11 @@ input[type="radio"]{
 
 .checkbox input[type="checkbox"] + .checkbox-indicator {
  position: absolute;
- top: -1px;
+ top: 1px;
  left: 0;
 
- width: 26px;
- height: 24px;
+ width: 23px;
+ height: 20px;
  background-image: url("../img/checkbox-off.svg");
  background-repeat: no-repeat;
  opacity: 0.4;
@@ -1542,7 +1547,7 @@ select option {
 }
 
 .range-element:hover,
-.range-element:active{
+.range-element:active {
   width: 23px;
   height: 23px;
   border: none;
@@ -1583,7 +1588,7 @@ select option {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.checkbox-conteiner{
+.checkbox-conteiner {
   width: 685px;
   height: 28px;
   padding-left: 15px;
@@ -1592,7 +1597,7 @@ select option {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.button-filter{
+.button-filter {
   height: 36px;
   border: none;
   border-radius: 20px;
@@ -1619,6 +1624,7 @@ select option {
    color: #333333;
 }
 
+/*
   .paginator .page-2,
   .paginator .page-3,
   .paginator .page-4,
@@ -1659,8 +1665,36 @@ select option {
   background-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
 }
+ */
 
-.first-page {
+ .paginator .page {
+   display: inline-block;
+   width: 26px;
+   height: 22px;
+   padding-top:4px;
+   font-weight: 400;
+   text-align: center;
+   margin-left: 3px;
+ }
+
+ .paginator .page:link,
+ .paginator .page:visited {
+  color: #ffffff;
+ }
+
+ .paginator .page:active {
+ border-radius: 14px;
+ background-color: #ffffff;
+ color: #333333;
+ }
+
+ .paginator .page:hover {
+ border-radius: 14px;
+ background-color: rgba(255, 255, 255, 0.2);
+ color: #ffffff;
+}
+
+ .paginator .page.selected{
   display: inline-block;
   width: 26px;
   height: 22px;
@@ -1670,20 +1704,26 @@ select option {
   font-weight: 400;
   text-align: center;
   color: #333333;
-  margin-left: 16px;
+  pointer-events: none;
+  cursor: default;
 }
 
 .paginator .arrow-left,
 .paginator .arrow-right {
   margin-top: 5px;
 }
-.paginator .page-5 {
+.paginator .arrow-left {
   margin-right: 16px;
+}
+.paginator .arrow-right {
+  margin-left: 16px;
 }
 /* сетка*/
 
-.container{
+.container {
   width: 1146px;
+  padding-left: 27px;
+  padding-right: 27px;
   margin: 0 auto;
   position: relative;
 }
@@ -1709,7 +1749,7 @@ select option {
 
 .user-navigation {
   width:267px;
-  margin-top: 2px;
+  margin-top: 10px;
   display:flex;
   align-items:center;
   justify-content: flex-end;
@@ -1767,7 +1807,7 @@ select option {
   height: 40px;
 }
 
-main .container{
+main .container {
   position: relative;
 }
 
@@ -1795,11 +1835,11 @@ main .container{
 .cost-wrapper-index{
   position: relative;
   text-align: left;
-  top:-60px;
+  top:-62px;
   position: relative;
 }
 
-.cost-wrapper-index::before{
+.cost-wrapper-index::before {
   content: "";
   width: 61px;
   height:61px;
@@ -1811,7 +1851,7 @@ main .container{
   min-height: 320px;
   width:267px;
   text-align: center;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   position: relative;
 }
 
@@ -1850,14 +1890,14 @@ main .container{
 
 }
 
-.vidget-about ul{
+.vidget-about ul {
   width:1110px;
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.vidget-about .text-wrapper{
+.vidget-about .text-wrapper {
   width:490px;
   margin-left: 58px;
   margin-top: 5px;
@@ -1884,7 +1924,7 @@ main .container{
   margin-left: 20px;
 }
 
-.vidget-about .apnx-1::before{
+.vidget-about .apnx-1::before {
   content: "";
   width:49px;
   height: 49px;
@@ -1894,7 +1934,7 @@ main .container{
   top:5px;
 }
 
-.vidget-about .apnx-2::before{
+.vidget-about .apnx-2::before {
   content: "";
   width:49px;
   height: 49px;
@@ -1904,7 +1944,7 @@ main .container{
   top:90px;
 }
 
-.vidget-about .apnx-3::before{
+.vidget-about .apnx-3::before {
   content: "";
   width:49px;
   height: 49px;
@@ -1914,7 +1954,7 @@ main .container{
   top:5px;
 }
 
-.vidget-about .apnx-4::before{
+.vidget-about .apnx-4::before {
   content: "";
   width:49px;
   height: 49px;
@@ -2002,7 +2042,7 @@ main .container{
   position: relative;
 }
 
-.social{
+.social {
  justify-content:flex-start;
  margin-top: 12px;
  position: relative;
@@ -2130,7 +2170,7 @@ main .container{
   padding-left: 36px;
 }
 
-.footer-info p{
+.footer-info p {
   margin: 0px;
   padding: 0px;
   width: 190px;
@@ -2147,10 +2187,10 @@ main .container{
   width: 116px;
   border: 0px;
   border-radius: 16px;
-  padding-top:6px;
-  padding-bottom:6px;
-  padding-right: 10px;
-  padding-left: 44px;
+  padding-top:7px;
+  padding-bottom:8px;
+  padding-right: 15px;
+  padding-left: 46px;
   margin-right: 0px;
   background-color: rgba(248, 247, 244, 1);
   font-weight: 700;
@@ -2187,7 +2227,7 @@ main .container{
   width: 21px;
   height: 20px;
   position: absolute;
-  left: 15px;
+  left: 17px;
   top:6px;
   background-image: url("../img/basket-red.svg");
 }
