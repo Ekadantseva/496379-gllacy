@@ -293,12 +293,10 @@ h5 {
     padding: 0;
 }
 .popup input[type=text],
-.popup input[type=email],
 .popup textarea {
     margin-top: 20px;
 }
-.popup input[type=text],
-.popup input[type=email] {
+.popup input[type=text] {
     width: 252px;
 }
 .popup textarea {
@@ -388,7 +386,7 @@ h5 {
 .login {
     position: relative;
 }
-.login input[type=email],
+.login input[type=text],
 .login input[type=password] {
     margin-top: 20px;
     width: 240px;
@@ -644,7 +642,7 @@ body > input[type="radio"] {
     background: #f8f7f4;
     border-radius: 10px
 }
-.vidget-subscription input[type=email] {
+.vidget-subscription input[type=text] {
     border-radius: 4px;
     height: 42px;
     width: 352px;
@@ -708,7 +706,7 @@ body > input[type="radio"] {
 .popup-close {
     width: 17px;
     height: 17px;
-    background-image: url("../img/Х-big.svg");
+    background-image: url("../img/x-big.svg");
     font-size: 0px;
     border: 0;
     cursor: pointer;
@@ -1065,7 +1063,6 @@ footer {
 /* Поля и другие UI */
 
 input[type=text],
-input[type=email],
 input[type=password] {
     width: 100%;
     border-style: solid;
@@ -1080,14 +1077,12 @@ input[type=password] {
     font-weight: 700;
 }
 input[type=text]:hover,
-input[type=email]:hover,
 input[type=password]:hover {
     border-style: solid;
     border-width: 2px;
     height: 40px;
 }
 input[type=text]:active,
-input[type=email]:active,
 input[type=password]:active {
     border-style: solid;
     border-width: 2px;
@@ -1095,7 +1090,6 @@ input[type=password]:active {
     height: 40px;
 }
 input[type=text]:focus,
-input[type=email]:focus,
 input[type=password]:focus {
     border-style: solid;
     border-width: 2px;
@@ -1114,11 +1108,9 @@ input[type=password]:focus {
     top: 33px;
     margin-left: 15px;
 }
-input[type=email]:focus ~ .float-label,
 input[type=text]:focus ~ .float-label,
 input[type=password]:focus ~ .float-label,
 textarea:focus ~ .float-label,
-input[type=email]:valid ~ .float-label,
 input[type=text]:valid ~ .float-label,
 input[type=password]:valid ~ .float-label,
 textarea:valid ~ .float-label {
@@ -1868,7 +1860,6 @@ header {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 56px);
-    /*margin-top: 56px;*/
 }
 .footer-container-catalog {
     width: 1146px;
